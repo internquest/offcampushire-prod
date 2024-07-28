@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --size: clamp(20px, 1.5vw, 30px);
+    --star-left: 0%;
+    --star-top: 0%;
+    --violet: 103, 58, 183;
+    /* ... */
+    --functionName: #2678D6;
+    --fnnamedeclaration: #DCDC8B;
+    --fnpara: #2FA1F0;
+    --propNam: #D4B182;
+    --propvalue: #C2915B;
+    --return: #C5769C
+  }
+}
+
+.student-bg {
+  background-image: url("../assets/ForStudents/headerbg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.clipping {
+  clip-path: polygon(0 -10%, 100% -10%, 100% 110%, 0% 110%)
+}
+
+.purple-bg {
+  background-image: url("../assets/College/puplebg.svg");
+  background-position: center;
+  object-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.process-bg {
+  background-image: url("../assets/About/d0b72678b7a9194b22260594255127bd.jpeg");
+}
+
+body {
+  overflow-x: hidden;
+
+}
+
+.bg-mobile {
+  background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhome-mobile.webp&w=2048&q=75");
+}
+
+@media (min-width: 768px) {
+  .bg-mobile {
+    background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75");
+  }
+}
