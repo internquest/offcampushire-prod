@@ -6,7 +6,7 @@ import MainDesc from "@/components/Landing/MainDesc";
 import Marquee from "@/components/Landing/Marquee";
 import SmallAbout from "@/components/Landing/SmallAbout";
 import Underneath from "@/components/Landing/Underneath";
-import { useMotionValueEvent, useScroll, motion, useTransform, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { useMotionValueEvent, useScroll, motion, useTransform, AnimateSharedLayout, AnimatePresence, LayoutGroup } from "framer-motion";
 import Lenis from 'lenis'
 import { useEffect, useRef, useState } from "react";
 
@@ -35,25 +35,27 @@ const Home = () => {
 
 
   return (
-    <AnimatePresence>
+    <LayoutGroup>
+      <AnimatePresence>
 
-      {loading ? (
-        <motion.div key='loader' className="w-screen h-screen  relative z-[900]">
-          <FirstPageLoad setLoading={setLoading} />
-        </motion.div>
-      ) : (
-        <div className="bg-white z-[5] relative overflow-hidden rounded-br-[65px] rounded-bl-[65px]">
+        {loading ? (
+          <motion.div key='loader' className="w-screen h-screen  relative ">
+            <FirstPageLoad setLoading={setLoading} />
+          </motion.div>
+        ) : (
+          <div className="bg-white z-[5] absolute overflow-hidden top-0 rounded-br-[65px] rounded-bl-[65px]">
 
-          <Header loading={loading} />
-          {/* <SmallAbout /> */}
-          <Marquee marqref={marqref} />
-          <MainDesc marqref={marqref} descRef={descRef} />
-          <Underneath descRef={descRef} underref={underref} />
-          <About />
+            <Header loading={loading} />
+            {/* <SmallAbout /> */}
+            <Marquee marqref={marqref} />
+            <MainDesc marqref={marqref} descRef={descRef} />
+            <Underneath descRef={descRef} underref={underref} />
+            <About />
 
-        </div>
-      )}
-    </AnimatePresence>
+          </div>
+        )}
+      </AnimatePresence>
+    </LayoutGroup>
   );
 };
 
