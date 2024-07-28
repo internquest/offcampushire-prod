@@ -26,7 +26,7 @@ const Featurecards = () => {
               Placement Assistance Workshop Pass
             </h1>
           </div>
-          <div className="flex flex-col max-w-[372px] gap-12 rounded-lg bg-gradient-to-b from-[#6E67FD] to-[#3DCAFF] p-4 text-white  ">
+          <div className="flex flex-col max-w-[372px] gap-[70px] rounded-lg bg-gradient-to-b from-[#6E67FD] to-[#3DCAFF] p-4 text-white  ">
             <h1 className={` ${MonaSemibold.className} text-[28px]`}>
               1 month spotlight membership
             </h1>
