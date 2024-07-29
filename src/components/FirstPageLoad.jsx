@@ -19,7 +19,7 @@ const FirstPageLoad = ({ setLoading }) => {
                 }
                 return prev + 1
             })
-        }, 15);
+        }, 10);
 
         return () => clearInterval(key)
     }, [])
@@ -81,9 +81,9 @@ const FirstPageLoad = ({ setLoading }) => {
             scale: 0.75,
             opacity: 0,
             transition: {
-                duration: 1.4,
+                duration: 0.4,
                 ease: 'easeIn',
-                delay: 0.4
+                delay: 1
             }
         }
 
@@ -99,9 +99,9 @@ const FirstPageLoad = ({ setLoading }) => {
             scale: 0.75,
             opacity: 0,
             transition: {
-                duration: 0.7,
+                duration: 0.5,
                 ease: 'easeIn',
-                delay: 0.4
+                delay: 0.9
             }
         }
     }
@@ -110,7 +110,7 @@ const FirstPageLoad = ({ setLoading }) => {
     return (
 
         <div className='w-screen h-screen relative z-[8]'>
-            <span class="fixed bg-gray-900 left-0 top-0 w-full h-full z-100 pointer-events-none" ></span>
+            <motion.span layoutId='bg' class="fixed bg-gray-900 left-0 top-0 w-full h-full z-100 pointer-events-none" ></motion.span>
 
             <motion.div initial='initial' animate='show' variants={container} class="fixed left-0 top-0   w-full h-[900px] bg-gray-900 z-500" >
                 <motion.span onAnimationComplete={() => setLoading(false)} class="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span class="w-full h-full flex rounded lg:rounded-lg bg-gray-400 scale-80 origin-right"></span>

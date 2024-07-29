@@ -42,7 +42,7 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div className="bg-white z-[5] absolute overflow-hidden top-0 rounded-br-[65px] rounded-bl-[65px]">
+        <div className="bg-white z-[5] w-screen absolute overflow-hidden top-0 rounded-br-[65px] rounded-bl-[65px]">
 
           <Header loading={loading} />
           {/* <SmallAbout /> */}
@@ -53,6 +53,8 @@ const Home = () => {
 
         </div>
       )}
+      {!loading && (
+        <motion.span layoutId="bg" class={`${!loading && ' delay-[1s] opacity-0 transition-opacity  duration-[0.5s] ease-[cubic-bezier(.3,.86,.36,.95)]'} fixed bg-gray-900 left-0 top-0 w-full h-full z-[4] pointer-events-none  `} ></motion.span>)}
     </>
   );
 };
