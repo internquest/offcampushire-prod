@@ -35,27 +35,25 @@ const Home = () => {
 
 
   return (
-    <LayoutGroup>
-      <AnimatePresence>
+    <>
 
-        {loading ? (
-          <motion.div key='loader' className="w-screen h-screen  relative ">
-            <FirstPageLoad setLoading={setLoading} />
-          </motion.div>
-        ) : (
-          <div className="bg-white z-[5] absolute overflow-hidden top-0 rounded-br-[65px] rounded-bl-[65px]">
+      {loading ? (
+        <motion.div key='loader' className="w-screen h-screen  relative ">
+          <FirstPageLoad setLoading={setLoading} />
+        </motion.div>
+      ) : (
+        <div className="bg-white z-[5] absolute overflow-hidden top-0 rounded-br-[65px] rounded-bl-[65px]">
 
-            <Header loading={loading} />
-            {/* <SmallAbout /> */}
-            <Marquee marqref={marqref} />
-            <MainDesc marqref={marqref} descRef={descRef} />
-            <Underneath descRef={descRef} underref={underref} />
-            <About />
+          <Header loading={loading} />
+          {/* <SmallAbout /> */}
+          <Marquee marqref={marqref} />
+          <MainDesc marqref={marqref} descRef={descRef} />
+          <Underneath descRef={descRef} underref={underref} />
+          <About />
 
-          </div>
-        )}
-      </AnimatePresence>
-    </LayoutGroup>
+        </div>
+      )}
+    </>
   );
 };
 
