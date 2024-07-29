@@ -58,7 +58,7 @@ const MainDesc = ({ marqref, descRef }) => {
       <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-full rounded-tl-full '></span>
       {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
       <div className='w-full h-full  pt-[2.5rem] md:pt-[4.7rem]  '>
-        <div className='   mx-auto '>
+        <div className='   mx-auto max-w-[1280px] '>
 
           <h2 className={`bmt:min-w-fit sm:w-[652px] md:mx-auto text-[20px]  md:text-[30px] font-medium leading-[1.8] mx-2  text-center tracking-normal  ${GeneralMedium.className} `}><WordsInview>OffcampusHire is the ultimate destination for
             freshers to&nbsp;</WordsInview>
