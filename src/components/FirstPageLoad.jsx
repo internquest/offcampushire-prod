@@ -113,15 +113,15 @@ const FirstPageLoad = ({ setLoading }) => {
 
     return (
 
-        <div className='w-full h-full  absolute top-0 z-[2000] overflow-hidden '>
+        <div className='w-screen h-screen flex flex-col justify-center  absolute top-0 z-[2000] overflow-hidden '>
             <motion.span className="fixed  bg-gray-900 left-0 top-0 w-full h-full  pointer-events-none" ></motion.span>
 
-            <motion.div initial='initial' animate='show' exit='exit' variants={container} className="   w-full lg:h-[740px] bg-gray-900 " >
+            <motion.div initial='initial' animate='show' exit='exit' variants={container} className="   w-full h-full bg-gray-900 " >
                 <motion.span onAnimationComplete={() => setLoading(false)} className="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span className="w-full h-full flex rounded lg:rounded-lg bg-gray-100 scale-80 origin-right"></span>
                 </motion.span>
                 <motion.span className="top-0 absolute w-full h-full" data-left-side="" initial='initial' animate='animate' variants={secondSpan}><span className="w-full h-full flex bg-gray-100 scale-90 origin-right rounded lg:rounded-lg"></span>
                 </motion.span>
-                <motion.div className={` w-full h-full  rounded-[10px] flex flex-col justify-center  bg-transparent border-none  `}>
+                <motion.div className={` w-full h-full  rounded-[10px] flex flex-col justify-start  bg-transparent border-none  `}>
 
                     <div className="relative flex flex-row items-center h-[73px] border-none bg-[hsla(0,0%,100%,0.7)] mb-[-1px] backdrop-blur-[12px]">
                         <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
@@ -140,7 +140,7 @@ const FirstPageLoad = ({ setLoading }) => {
                         </div>
                     </div>
 
-                    <motion.div className={`  bg-[hsla(0,0%,100%,0.7)] border-none     flex justify-center items-center gap-10 bg-cover  bg-no-repeat  w-full lg:h-[632px] relative    flex-col px-2 py-12  md:py-14  lg:py-20   `}>
+                    <motion.div className={`  bg-[hsla(0,0%,100%,0.7)] border-none     flex justify-center items-center gap-10 bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-2 py-12  md:py-14  lg:py-20   `}>
                         <h1 className={` mx-auto font-medium  text-start  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
