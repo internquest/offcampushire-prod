@@ -21,7 +21,7 @@ const FirstPageLoad = ({ setLoading }) => {
                 }
                 return prev + 1
             })
-        }, 5);
+        }, 28);
 
         return () => clearInterval(key)
     }, [])
