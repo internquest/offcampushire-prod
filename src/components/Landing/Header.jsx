@@ -29,7 +29,7 @@ export default function Header({ loading }) {
     animate: {
       opacity: 1,
       transition: {
-        duration: .3,
+        duration: .9,
         delay: 2
 
       }
