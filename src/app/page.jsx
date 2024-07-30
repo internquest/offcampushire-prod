@@ -6,7 +6,7 @@ import MainDesc from "@/components/Landing/MainDesc";
 import Marquee from "@/components/Landing/Marquee";
 import SmallAbout from "@/components/Landing/SmallAbout";
 import Underneath from "@/components/Landing/Underneath";
-import { useMotionValueEvent, useScroll, motion, useTransform, AnimateSharedLayout, AnimatePresence, LayoutGroup } from "framer-motion";
+import { useMotionValueEvent, useScroll, motion, useTransform, AnimateSharedLayout, AnimatePresence, LayoutGroup, delay } from "framer-motion";
 import Lenis from 'lenis'
 import { useEffect, useRef, useState } from "react";
 
@@ -16,9 +16,10 @@ const Home = () => {
   const underref = useRef(null)
   const [loading, setLoading] = useState(true)
 
+
   useEffect(() => {
     const lenis = new Lenis()
-
+    console.log(lenis);
     // lenis.on('scroll', (e) => {
     //   console.log(e)
     // })
@@ -33,16 +34,27 @@ const Home = () => {
   }, [])
   console.log(loading);
 
+  const bg2variants = {
+    initial: {
+      opacity: 1,
+
+    },
+    animate: {
+      opacity: 0,
+    }
+  }
+
 
   return (
-    <>
+    <AnimatePresence >
+
 
       {loading ? (
         <motion.div key='loader' className="w-screen h-screen  relative ">
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div className="bg-white z-[5] w-screen absolute overflow-hidden top-0 rounded-br-[65px] rounded-bl-[65px]">
+        <div key='notloader' className="bg-white relative z-[5] w-screen rounded-br-[65px] rounded-bl-[65px]">
 
           <Header loading={loading} />
           {/* <SmallAbout /> */}
@@ -50,12 +62,13 @@ const Home = () => {
           <MainDesc marqref={marqref} descRef={descRef} />
           <Underneath descRef={descRef} underref={underref} />
           <About />
-
         </div>
       )}
-      {!loading && (
-        <motion.span layoutId="bg" class={`${!loading && ' delay-[1s] opacity-0 transition-opacity  duration-[0.5s] ease-[cubic-bezier(.3,.86,.36,.95)]'} fixed bg-gray-900 left-0 top-0 w-full h-full z-[4] pointer-events-none  `} ></motion.span>)}
-    </>
+      <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[100] transition-opacity duration-[1s]  ease-in  bg-gray-900 left-0 top-0 w-full h-full  pointer-events-none `} ></span>
+
+
+    </AnimatePresence>
+
   );
 };
 
