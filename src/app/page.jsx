@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     const lenis = new Lenis()
-    console.log(lenis);
+    // console.log(lenis);
     // lenis.on('scroll', (e) => {
     //   console.log(e)
     // })
@@ -32,7 +32,7 @@ const Home = () => {
     requestAnimationFrame(raf)
 
   }, [])
-  console.log(loading);
+  // console.log(loading);
 
   const bg2variants = {
     initial: {
@@ -54,7 +54,7 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div key='notloader' className="bg-white relative z-[5] w-screen rounded-br-[65px] rounded-bl-[65px]">
+        <div key='notloader' className="bg-white relative z-[5] overflow-hidden w-screen h-fit rounded-br-[65px] rounded-bl-[65px]">
 
           <Header loading={loading} />
           {/* <SmallAbout /> */}
@@ -64,7 +64,7 @@ const Home = () => {
           <About />
         </div>
       )}
-      <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[2.4s]   ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span>
+      <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[2.4s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span>
 
 
     </AnimatePresence>

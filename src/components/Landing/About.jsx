@@ -1,13 +1,15 @@
 'use client'
 import { MonaMedium, GeneralMedium, GeneralRegular, MonaBold, GeneralSemibold, MonaSemibold, MonaRegular } from "@/utils/fonts";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Testimonials from "./Testimonials";
 import inform from '@/assets/Landing/Group 43 1.svg'
 
-
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 const About = () => {
+  const [transfromY, setTransformY] = useState(0)
+  const [movementboxvalue, setmovementboxvalue] = useState(0)
   const spanref = useRef([3])
   let index = 0
   let interval = 1000
@@ -40,8 +42,17 @@ const About = () => {
 
   //   return () => cleanupFunctions.forEach(x => x())
   // }, [])
+  const { scrollYProgress } = useScroll()
+
+  const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-1019, -3020])
+  // useMotionValueEvent(scrollYProgress, 'change', (x) => {
+  //   setTransformY(movement.get())
+  //   // console.log(scrollYProgress.get());
+  //   // console.log(-3.2 * movement.get());
+  // })
+
   return (
-    <div className="w-screen mt-16 bg-white  ">
+    <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  ">
 
 
 
@@ -339,7 +350,7 @@ const About = () => {
         freshers and exclusive off-campus placement drives beyond on-campus
         placements.
       </p> */}
-    </div>
+    </motion.div>
   );
 };
 
