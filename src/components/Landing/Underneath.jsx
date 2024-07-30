@@ -11,9 +11,9 @@ const Underneath = ({ descRef, underref }) => {
     const { width: windowWidth } = useWindowSize()
     // console.log(windowWidth);
     let movementbox
-    useEffect(() => {
-        l
-    }, [])
+    // useEffect(()=>{
+    //     l
+    // },[])
 
     // const underref = useInView(underref)
 
