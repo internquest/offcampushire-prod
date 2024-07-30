@@ -3,6 +3,8 @@ import { animate, delay, easeInOut, motion } from 'framer-motion'
 import { MonaBold, MonaMedium } from '@/utils/fonts'
 import WordsInview from './WordsInview'
 import { useWindowSize } from '@uidotdev/usehooks'
+import Image from 'next/image'
+import WordsWoutanim from './WordsWoutanim'
 
 const FirstPageLoad = ({ setLoading }) => {
     const [load, setLoad] = useState(0)
@@ -19,7 +21,7 @@ const FirstPageLoad = ({ setLoading }) => {
                 }
                 return prev + 1
             })
-        }, 10);
+        }, 5);
 
         return () => clearInterval(key)
     }, [])
@@ -65,8 +67,8 @@ const FirstPageLoad = ({ setLoading }) => {
             scale: 1,
 
             transition: {
-                duration: 1,
-                ease: [0.6, 0.01, -0.05, 0.9]
+                duration: 1.6,
+                ease: [0.6, 0.01, -0.05, 1]
             }
 
         }
@@ -82,9 +84,9 @@ const FirstPageLoad = ({ setLoading }) => {
             scale: 0.75,
             opacity: 0,
             transition: {
-                duration: 1,
+                duration: 2,
                 ease: 'easeIn',
-                delay: 1.5
+                delay: 1
             }
         }
 
@@ -102,35 +104,34 @@ const FirstPageLoad = ({ setLoading }) => {
             transition: {
                 duration: 1.6,
                 ease: 'easeIn',
-                delay: 1.2
+                delay: 1
             }
         }
     }
 
 
-
     return (
 
-        <div className='w-screen h-screen relative z-[200]  rounded-[100px]'>
+        <div className='w-screen h-screen relative z-[200] overflow-hidden '>
             <motion.span className="fixed  bg-gray-900 left-0 top-0 w-full h-full  pointer-events-none" ></motion.span>
 
-            <motion.div initial='initial' animate='show' exit='exit' variants={container} className="   w-full h-[900px] bg-gray-900 " >
+            <motion.div initial='initial' animate='show' exit='exit' variants={container} className="   w-full lg:h-[900px] bg-gray-900 " >
                 <motion.span onAnimationComplete={() => setLoading(false)} className="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span className="w-full h-full flex rounded lg:rounded-lg bg-gray-400 scale-80 origin-right"></span>
                 </motion.span>
                 <motion.span className="top-0 absolute w-full h-full" data-left-side="" initial='initial' animate='animate' variants={secondSpan}><span className="w-full h-full flex bg-gray-300 scale-90 origin-right rounded lg:rounded-lg"></span>
                 </motion.span>
-                <motion.div className={` w-full h-full  flex justify-center  bg-transparent border-none  `}>
-                    <motion.div className={` bg-[url('https://ik.imagekit.io/0ytuu3ujr/2d-graphic-colorful-wallpaper-with-grainy-gradients-min.jpg')]  bg-cover    flex justify-center items-center   w-full h-screen relative  rounded-[100px]  `}>
-                        <div className={`flex  flex-col gap-9 `}>
-                            <h1 transition={{ duration: 1.4 }} className={` relative z-[2]  font-semibold  text-start  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  pt-12  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsInview isclip={true}>The future of off-campus</WordsInview><WordsInview isclip={true}>placement drives is here</WordsInview></h1>
+                <motion.div className={` w-full h-full  flex flex-col justify-center  bg-transparent border-none  `}>
+
+                    <motion.div exit={{ height: '1200px' }} className={` bg-[url('https://ik.imagekit.io/0ytuu3ujr/2d-graphic-colorful-wallpaper-with-grainy-gradients-min.jpg')]      flex justify-center items-center gap-10 bg-cover  bg-no-repeat  w-full lg:h-[632px] relative  rounded-[10px]  flex-col px-2 py-12  md:py-14  lg:py-20   `}>
+                        <h1 className={` mx-auto font-medium  text-start  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
-                            <div className="mt-auto flex justify-between items-end" >
-                                <div className="flex items-baseline leading-none"><span>Loading:</span></div>
-                                <div className={`h1 mb-0 leading-negative font-secondary uppercase text-6xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
-                            </div>
-
+                        <div className=" flex gap-40 mb-auto  items-center" >
+                            <div className="flex items-baseline text-2xl leading-none"><span>Loading:</span></div>
+                            <div className={`h1 mb-0 leading-negative font-secondary uppercase text-6xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
                         </div>
+
+
 
                         {/* {
 <div class="fixed left-0 top-0 w-full h-vh-static bg-gray-900 z-500" data-component="preloader" data-scroll-section="">
