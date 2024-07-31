@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-[999] h-full w-full rounded-md border border-gray-100 bg-gray-400 bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter">
+      <nav id="nav" className="sticky top-0 z-[999] h-full w-full  rounded-md border border-gray-100 bg-gray-400 bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter">
         <div className="relative flex flex-row items-center border-b border-gray-100 bg-[hsla(0,0%,100%,0.7)] backdrop-blur-[12px]">
           <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
             <div className="flex w-[162px] justify-start">

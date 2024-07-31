@@ -44,9 +44,32 @@ const Home = () => {
     }
   }
 
+  useEffect(() => {
+    const html = document.getElementById('html')
+    const nav = document.getElementById('nav')
+    // console.log(nav);
+    html.style.height = '100%'
+    html.style.width = '100%',
+      html.style.overflow = 'hidden',
+      html.style.position = 'fixed',
+      nav.style.opacity = 0
+
+  }, [])
+
 
   return (
-    <AnimatePresence >
+    <AnimatePresence onExitComplete={() => {
+      const html = document.getElementById('html')
+      const nav = document.getElementById('nav')
+      // console.log(nav);
+      html.style.height = ''
+      html.style.width = '',
+        html.style.overflow = '',
+        html.style.position = '',
+        nav.style.opacity = 1
+      nav.style.transitionDuration = '1.9s'
+      // nav.style.transitionDelay = '1s'
+    }}  >
 
 
       {loading ? (
@@ -54,7 +77,7 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div key='notloader' className="bg-white relative z-[5] overflow-hidden w-screen  rounded-br-[65px] rounded-bl-[65px]">
+        <div key='notloader' className="bg-white relative z-[5] overflow-hidden w-screen  flex flex-col rounded-br-[65px] rounded-bl-[65px]">
 
           <Header loading={loading} />
           {/* <SmallAbout /> */}

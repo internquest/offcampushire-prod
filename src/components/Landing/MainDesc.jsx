@@ -50,8 +50,8 @@ const MainDesc = ({ marqref, descRef }) => {
   const movement = useTransform(scrollYProgress, [0, 0.3], [0, 600])
   useMotionValueEvent(scrollYProgress, 'change', (x) => {
     setTransformY(movement.get())
-    console.log(scrollYProgress.get());
-    console.log(-3.2 * movement.get());
+    // console.log(scrollYProgress.get());
+    // console.log(-3.2 * movement.get());
   })
 
   return (

@@ -15,15 +15,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-
+  console.log('shva');
 
   return (
-    <html lang="en" >
+    <html lang="en" id="html" >
       <head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
       </head>
-      <body className={`${GeneralRegular.className} relative overflow-hidden`}>
+      <body className={`${GeneralRegular.className} relative  overflow-hidden`}>
         <SmoothScroller>
 
           <Navbar />
