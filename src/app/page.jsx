@@ -67,7 +67,7 @@ const Home = () => {
         html.style.overflow = '',
         html.style.position = '',
         nav.style.opacity = 1
-      nav.style.transitionDuration = '1.9s'
+      nav.style.transitionDuration = '1.6s'
       // nav.style.transitionDelay = '1s'
     }}  >
 
@@ -87,7 +87,7 @@ const Home = () => {
           <About />
         </div>
       )}
-      <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[2.4s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span>
+      {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.5s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}
 
 
     </AnimatePresence>
