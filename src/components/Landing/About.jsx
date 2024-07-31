@@ -47,9 +47,10 @@ const About = () => {
   const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-1019, -3020])
   // useMotionValueEvent(scrollYProgress, 'change', (x) => {
   //   setTransformY(movement.get())
-  //   // console.log(scrollYProgress.get());
+  // console.log(scrollYProgress.get());
   //   // console.log(-3.2 * movement.get());
   // })
+  // if(scrollYProgress>)
 
   return (
     <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  ">

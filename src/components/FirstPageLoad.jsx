@@ -68,8 +68,8 @@ const FirstPageLoad = ({ setLoading }) => {
             scale: 1,
             height: '100vh',
             transition: {
-                duration: 1.6,
-                ease: [0.6, 0.01, -0.05, 1]
+                duration: 0.5,
+                ease: 'linear'
             }
 
         }
@@ -78,12 +78,12 @@ const FirstPageLoad = ({ setLoading }) => {
     const firstSpan = {
         initial: {
             x: '-150%',
-            scale: 0.75,
+
         },
         animate: {
             x: 45,
-            scale: 0.75,
-            opacity: 0,
+
+
             transition: {
                 duration: 2,
                 ease: 'easeIn',
@@ -95,13 +95,13 @@ const FirstPageLoad = ({ setLoading }) => {
     const secondSpan = {
         initial: {
             x: '150%',
-            scale: 0.75,
+
 
         },
         animate: {
             x: 25,
 
-            opacity: 0,
+
             transition: {
                 duration: 1.6,
                 ease: 'easeIn',
@@ -116,15 +116,15 @@ const FirstPageLoad = ({ setLoading }) => {
         <div className='w-screen h-screen flex flex-col justify-center  absolute top-0 z-[2000] overflow-hidden '>
             <motion.span className="fixed  bg-gray-900 left-0 top-0 w-full h-full  pointer-events-none" ></motion.span>
 
-            <motion.div initial='initial' animate='show' exit='exit' variants={container} className="   w-full h-full bg-gray-900 " >
-                <motion.span onAnimationComplete={() => setLoading(false)} className="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span className="w-full h-full flex rounded lg:rounded-lg bg-gray-100 scale-80 origin-right"></span>
+            <motion.div initial='initial' animate='show' exit='exit' variants={container} className=" relative  w-full h-full  " >
+                <motion.span onAnimationComplete={() => setLoading(false)} className="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span className="w-full h-full flex rounded lg:rounded-[50px] bg-gray-400 scale-[.8] origin-right"></span>
                 </motion.span>
-                <motion.span className="top-0 absolute w-full h-full" data-left-side="" initial='initial' animate='animate' variants={secondSpan}><span className="w-full h-full flex bg-gray-100 scale-90 origin-right rounded lg:rounded-lg"></span>
+                <motion.span className="top-0 absolute w-full h-full" data-left-side="" initial='initial' animate='animate' variants={secondSpan}><span className="w-full h-full flex bg-gray-300 scale-90 origin-right rounded-[50px] lg:rounded-[50px "></span>
                 </motion.span>
-                <motion.div className={` w-full h-full  rounded-[10px] flex flex-col justify-start  bg-transparent border-none  `}>
+                <motion.div className={` w-full h-full rounded-[50px] bg-[hsla(0,0%,100%)] gap-0 flex flex-col justify-start   border-none  `}>
 
-                    <div className="relative flex flex-row items-center h-[73px] border-none bg-[hsla(0,0%,100%,0.7)] mb-[-1px] backdrop-blur-[12px]">
-                        <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
+                    <div className="relative flex rounded-tr-[50px] rounded-tl-[50px] flex-row items-center h-[78px] outline-0 border-0 border-none bg-[hsla(0,0%,100%)] mb-0 backdrop-blur-[12px]">
+                        <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center  justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
                             <div className="flex w-[162px] justify-start">
                                 <Link href="/" className="z-30 w-28">
                                     <Image
@@ -140,13 +140,13 @@ const FirstPageLoad = ({ setLoading }) => {
                         </div>
                     </div>
 
-                    <motion.div className={`  bg-[hsla(0,0%,100%,0.7)] border-none     flex justify-center items-center gap-10 bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-2 py-12  md:py-14  lg:py-20   `}>
-                        <h1 className={` mx-auto font-medium  text-start  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+                    <motion.div className={`  bg-[hsla(0,0%,100%)] border-none mt-0  border-0 rounded-bl-[50px] rounded-br-[50px]   flex justify-between items-center  bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-2 py-12  md:py-14  lg:py-20   `}>
+                        <h1 className={` mx-auto font-medium  text-center  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
-                        <motion.div exit={{ opacity: 0 }} transition={{ duration: 1.5 }} className=" flex gap-40 mb-auto  items-center" >
-                            <div className="flex items-baseline text-2xl max-w-fit leading-none"><span>Loading:</span></div>
-                            <div className={`h1 mb-0 leading-negative font-secondary w-[150px] uppercase text-6xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
+                        <motion.div exit={{ opacity: 0 }} transition={{ duration: 1.5 }} className=" flex mt-auto gap-40 justify-between w-full px-32  items-center" >
+                            <div className="flex items-baseline text-5xl max-w-fit leading-none"><span>Loading:</span></div>
+                            <div className={`h1 mb-0 leading-negative mr-8 font-secondary w-[150px] uppercase text-8xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
                         </motion.div>
 
 

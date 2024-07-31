@@ -13,6 +13,18 @@ export default function Header({ loading }) {
   const buttonVariants = {
     hover: {
       background: 'linear-gradient(to bottom right,#0055ff,#21d6ef)'
+    },
+    initial: {
+      opacity: 0,
+
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: .9,
+        delay: 2
+
+      }
     }
   }
   const textVariant = {
@@ -42,10 +54,11 @@ export default function Header({ loading }) {
         !loading && (
           <motion.div className=" bg-[url('https://ik.imagekit.io/0ytuu3ujr/mob%20home-min.jpg')]  md:bg-[url('https://ik.imagekit.io/0ytuu3ujr/tab%20home-min.jpg')]  lg:bg-[url('https://ik.imagekit.io/0ytuu3ujr/2d-graphic-colorful-wallpaper-with-grainy-gradients-min.jpg')]  h-[626px] w-full lg:h-[1200px]  lg:min-h-[813px] lg:max-h-[1100px]   bg-center bg-no-repeat bg-cover  bmt:h-screen    flex-col px-2 py-12  md:py-14  lg:py-20  ">
 
-            <h1 className={` mx-auto font-medium  text-start  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+            <h1 className={` mx-auto font-medium  text-start lg:text-center  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
             <div className="w-full flex justify-center mt-3  ">
               <div className="mx-auto ">
-                <motion.button whileHover='hover' variants={buttonVariants} className={`-ml-3 mx-auto  px-2   ${GeneralMedium.className} rounded-[5px] font-bold tracking-wide leading-7 text-2xl bg-gradient-to-r from-[#6161A6] to-[#252540] mt-4 text`}>
+
+                <motion.button whileHover='hover' initial='initial' animate='animate' variants={buttonVariants} className={`-ml-3 mx-auto  px-2   ${GeneralMedium.className} rounded-[5px] font-bold tracking-wide leading-7 text-2xl bg-gradient-to-r from-[#6161A6] to-[#252540] mt-4 text`}>
                   <motion.span variants={textVariant} className={`${MonaSemibold.className} mx-auto bg-clip-text h-[36px] w-[110px] [-webkit-background-clip:text] inline-block whitespace-nowrap border-none outline-none bg-gradient-to-br px-2 py-1 from-[#FFFFFF] to-[#F2F4FE] text-[1rem]  font-medium text-transparent`}>
                     Get Started
                   </motion.span>
