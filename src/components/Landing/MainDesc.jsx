@@ -55,7 +55,7 @@ const MainDesc = ({ marqref, descRef }) => {
   })
 
   return (
-    <motion.section ref={descRef} style={{ y: marqrefinview && -3.2 * transfromY }} className='relative bg-white '>
+    <motion.section ref={descRef} style={{ y: marqrefinview && -3.2 * transfromY }} className='relative w-sc bg-white '>
       <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-full rounded-tl-full '></span>
       {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
       <div className='w-full h-full  pt-[2.5rem] md:pt-[4.7rem]  '>
@@ -81,16 +81,19 @@ const MainDesc = ({ marqref, descRef }) => {
 
           <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2023-min.svg' alt="" width={610} height={659} className="md:mx-auto  mt-[50px] md:mt-16 mx-2 bmt:w-[95%] " />
 
-          <div className={`bg-[url('https://ik.imagekit.io/0ytuu3ujr/reimagining%20(1).webp')] bg-cover bg-center  py-[40px]     md:py-6 md:px-6   lg:px-3 lg:py-3 md:h-[400px] lg:h-[550px] flex flex-col md:flex-row justify-center md:items-center  gap-5 md:gap-12 lg:gap-12 tracking-tight`}>
-            <h2 className={` ${MonaMedium.className} text-[30px] md:text-[24px]  max-w-[338px] lg:text-4xl font-semibold md:leading-[1.5] mx-3 btl:min-w-[220px] lg:min-w-[300px] lg:leading-[1.7] text-white tracking-normal text-start  `}>Reimagining off-campus placement drives ecosystem of India</h2>
-            <p className={`${GeneralRegular.className} bmt:min-w-fit  md:max-w-[699px] text-[1.1rem] lg:text-2xl  leading-[1.85]   md:leading-[1.7] lg:leading-[2] tracking-normal font-normal  text-start mx-3  md:pl-8 text-white`}>Welcome to OffcampusHire, where we are dedicated to
-              empowering freshers to kickstart their careers through
-              exclusive off-campus placement drives. Our platform
-              serves as a catalyst for bridging the gap between freshers
-              and exclusive off-campus placement drives beyond
-              on-campus placements .</p>
-          </div>
 
+
+        </div>
+      </div>
+      <div className={`bg-[url('https://ik.imagekit.io/0ytuu3ujr/reimagining%20(1).webp')] bg-cover bg-center w-full`}>
+        <div className={` py-[40px]  w-full    md:py-6 md:px-6   lg:px-3 lg:py-3 md:h-[400px] lg:h-[550px] flex flex-col md:flex-row justify-center md:items-center  gap-5 md:gap-12 lg:gap-12 tracking-tight max-w-[1280px] mx-auto`}>
+          <h2 className={` ${MonaMedium.className} text-[30px] md:text-[24px]  max-w-[338px] lg:text-4xl font-semibold md:leading-[1.5] mx-3 btl:min-w-[220px] lg:min-w-[300px] lg:leading-[1.7] text-white tracking-normal text-start  `}>Reimagining off-campus placement drives ecosystem of India</h2>
+          <p className={`${GeneralRegular.className} bmt:min-w-fit  md:max-w-[699px] text-[1.1rem] lg:text-2xl  leading-[1.85]   md:leading-[1.7] lg:leading-[2] tracking-normal font-normal  text-start mx-3  md:pl-8 text-white`}>Welcome to OffcampusHire, where we are dedicated to
+            empowering freshers to kickstart their careers through
+            exclusive off-campus placement drives. Our platform
+            serves as a catalyst for bridging the gap between freshers
+            and exclusive off-campus placement drives beyond
+            on-campus placements .</p>
         </div>
       </div>
 
