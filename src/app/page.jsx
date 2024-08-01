@@ -73,7 +73,7 @@ const Home = () => {
 
 
       {loading ? (
-        <motion.div key='loader' className="w-screen h-screen   ">
+        <motion.div key='loader' className="w-screen h-screen  relative ">
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
@@ -87,7 +87,7 @@ const Home = () => {
           <About />
         </div>
       )}
-      {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.5s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}
+      <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.7s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span>
 
 
     </AnimatePresence>
