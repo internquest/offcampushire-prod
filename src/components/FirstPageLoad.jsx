@@ -193,13 +193,13 @@ const FirstPageLoad = ({ setLoading }) => {
                         </div>
                     </nav>
 
-                    <motion.div className={`  bg-[hsla(0,0%,100%)] border-none mt-0  border-0 rounded-bl-[25px] rounded-br-[25px]   flex justify-between items-center  bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-2 py-12  md:py-14  lg:py-20   `}>
-                        <h1 className={` mx-auto font-medium  text-center  text-[34px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+                    <motion.div className={`  bg-[hsla(0,0%,100%)] border-none mt-0  border-0 rounded-bl-[25px] rounded-br-[25px]   flex justify-between items-center  bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-3 py-12  md:py-14  lg:py-20   `}>
+                        <h1 className={` mx-auto font-medium   text-start lg:text-center  text-[36px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-[0.01em] md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
                         <motion.div exit={{ opacity: 0 }} transition={{ duration: 1.5 }} className=" flex mt-auto gap-40 justify-between w-full px-32  items-center" >
-                            <div className="flex items-baseline text-5xl max-w-fit leading-none"><span>Loading:</span></div>
-                            <div className={`h1 mb-0 leading-negative mr-8 font-secondary w-[150px] uppercase text-8xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
+                            <div className="flex items-baseline text-3xl md:text-5xl max-w-fit leading-none"><span>Loading:</span></div>
+                            <div className={`h1 mb-0 leading-negative mr-8 font-secondary w-[150px] uppercase text-5xl md:text-8xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
                         </motion.div>
 
 
