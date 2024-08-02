@@ -18,6 +18,10 @@
   }
 }
 
+.isInview {
+  opacity: 1;
+}
+
 .load {
   width: 100%;
   height: 100%;

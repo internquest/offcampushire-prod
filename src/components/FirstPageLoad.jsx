@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { animate, delay, easeInOut, motion } from 'framer-motion'
 import { MonaBold, MonaMedium } from '@/utils/fonts'
-import WordsInview from './WordsInview'
-import { useWindowSize } from '@uidotdev/usehooks'
+
+
 import Image from 'next/image'
 import WordsWoutanim from './WordsWoutanim'
 import Link from 'next/link'
 
 const FirstPageLoad = ({ setLoading }) => {
     const [load, setLoad] = useState(0)
-    const { width: windowWidth } = useWindowSize()
+
     useEffect(() => {
 
         const key = setInterval(() => {
@@ -114,17 +114,17 @@ const FirstPageLoad = ({ setLoading }) => {
     return (
 
         <div className='fixed top-0 left-0 w-full h-full flex flex-col justify-center z-[2000] overflow-hidden '>
-            {/* <motion.span className="fixed  bg-gray-900 left-0 top-0 w-full h-full  pointer-events-none" ></motion.span> */}
+            <motion.span className="fixed  bg-gray-900 left-0 top-0 w-full h-full  pointer-events-none" ></motion.span>
 
             <motion.div initial='initial' animate='show' exit='exit' variants={container} className="   w-full h-full  " >
-                <motion.span onAnimationComplete={() => setLoading(false)} className="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span className="w-full h-full flex rounded lg:rounded-[50px] bg-gray-400 scale-[.8] origin-right"></span>
+                <motion.span onAnimationComplete={() => setLoading(false)} className="top-0 absolute w-full h-full" data-right-side="" initial='initial' animate='animate' variants={firstSpan}><span className="w-full h-full flex rounded-[50px] lg:rounded-[50px] bg-gray-400 scale-[.8] origin-right"></span>
                 </motion.span>
                 <motion.span className="top-0 absolute w-full h-full" data-left-side="" initial='initial' animate='animate' variants={secondSpan}><span className="w-full h-full flex bg-gray-300 scale-90 origin-right rounded-[50px] lg:rounded-[50px] "></span>
                 </motion.span>
-                <motion.div className={`  h-full  rounded-[25px] bg-[hsla(0,0%,100%)] gap-0 flex flex-col justify-start     `}>
-                    <span class="bg-[hsla(0,0%,100%)]  rounded-[25px] lg:rounded-[25px] -right-5 -left-5 -top-5 -bottom-5 absolute -z-1"></span>
+                <motion.div className={`  h-full  rounded-[25px]  gap-0 flex flex-col justify-start     `}>
+                    <span className="bg-[hsla(0,0%,100%)]  rounded-[25px] lg:rounded-[25px] -right-5 -left-5 -top-5 -bottom-5 absolute -z-1"></span>
                     <nav className="fixed top-0  z-[999] rounded-tr-[25px] rounded-tl-[25px] w-full   ">
-                        <div className="relative flex flex-row  rounded-tr-[25px] rounded-tl-[25px] items-center border-b border-gray-100 bg-[hsla(0,0%,100%)] backdrop-blur-[12px]">
+                        <div className="relative flex flex-row  rounded-tr-[25px] rounded-tl-[25px] items-center pt-[1px]   backdrop-blur-[12px]">
                             <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
                                 <div className="flex w-[162px] justify-start ">
                                     <Link href="/" className="z-30 w-28">
@@ -193,13 +193,14 @@ const FirstPageLoad = ({ setLoading }) => {
                         </div>
                     </nav>
 
-                    <motion.div className={`  bg-[hsla(0,0%,100%)] border-none mt-0  border-0 rounded-bl-[25px] rounded-br-[25px]   flex justify-between items-center  bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-3 py-12  md:py-14  lg:py-20   `}>
-                        <h1 className={` mx-auto font-medium   text-start lg:text-center  text-[36px] md:text-[50px] 2xl:text-[4.5rem]  px-0  bmt:leading-[1.75] leading-[1.6] tracking-[0.01em] md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+                    <motion.div className={`   border-none mt-0  border-0 rounded-bl-[25px] rounded-br-[25px]   flex justify-between items-center  bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-4    `}>
+                        <h1 className={` mt-24  md:mx-auto font-medium  text-start   lg:text-center  text-[36px] pr-4 sm:hidden md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off- campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+                        <h1 className={`mx-4 mt-56 md:mx-auto font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
-                        <motion.div exit={{ opacity: 0 }} transition={{ duration: 1 }} className=" flex mt-auto gap-40 justify-between w-full px-32  items-center" >
-                            <div className="flex items-baseline text-3xl md:text-5xl max-w-fit leading-none"><span>Loading:</span></div>
-                            <div className={`h1 mb-0 leading-negative mr-8 font-secondary w-[150px] uppercase text-5xl md:text-8xl font-semibold ${MonaBold.className} `}><span data-progress-value="">{load}</span><span>%</span></div>
+                        <motion.div exit={{ opacity: 0 }} transition={{ duration: 1 }} className=" flex mt-auto gap-6 md:gap-40 mb-7 justify-between w-full md:px-32  items-center" >
+                            <div className="flex items-baseline text-xl md:text-5xl max-w-fit leading-none"><span>Loading:</span></div>
+                            <div className={`h1 mb-0 leading-negative md:mr-8 font-secondary w-[150px] uppercase text-5xl md:text-8xl font-semibold ${MonaBold.className} `}><span className='w-[100px]' data-progress-value="">{load}</span><span className='text-6xl md:text-9xl'>%</span></div>
                         </motion.div>
 
 

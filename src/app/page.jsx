@@ -7,8 +7,12 @@ import Marquee from "@/components/Landing/Marquee";
 import SmallAbout from "@/components/Landing/SmallAbout";
 import Underneath from "@/components/Landing/Underneath";
 import { useMotionValueEvent, useScroll, motion, useTransform, AnimateSharedLayout, AnimatePresence, LayoutGroup, delay } from "framer-motion";
-import Lenis from 'lenis'
+
 import { useEffect, useRef, useState } from "react";
+import LocomotiveScroll from 'locomotive-scroll';
+
+
+
 
 const Home = () => {
   const marqref = useRef(null)
@@ -18,20 +22,13 @@ const Home = () => {
 
 
   useEffect(() => {
-    const lenis = new Lenis()
-    // console.log(lenis);
-    // lenis.on('scroll', (e) => {
-    //   console.log(e)
-    // })
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
 
-    requestAnimationFrame(raf)
 
-  }, [])
+    const locomotiveScroll = new LocomotiveScroll()
+
+
+  })
   // console.log(loading);
 
   const bg2variants = {
@@ -48,8 +45,8 @@ const Home = () => {
     const html = document.getElementById('html')
     const nav = document.getElementById('nav')
     // console.log(nav);
-    html.style.height = '100%'
-    html.style.width = '100%',
+    html.style.height = '100vh'
+    html.style.width = '100vw',
       html.style.overflow = 'hidden',
       html.style.position = 'fixed',
       nav.style.opacity = 0
@@ -68,7 +65,7 @@ const Home = () => {
         html.style.position = '',
         nav.style.opacity = 1
       nav.style.transitionDuration = '1.6s'
-      // nav.style.transitionDelay = '1s'
+      nav.style.transitionDelay = '.1s'
     }}  >
 
 
@@ -87,7 +84,7 @@ const Home = () => {
           <About />
         </div>
       )}
-      <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.7s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span>
+      {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.9s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}
 
 
     </AnimatePresence>
