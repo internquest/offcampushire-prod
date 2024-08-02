@@ -12,8 +12,7 @@
     "@million/lint": "^1.0.0-rc.84",
     "@uidotdev/usehooks": "^2.4.1",
     "framer-motion": "^11.3.8",
-    "lenis": "^1.1.6",
-    "million": "^3.1.11",
+    "locomotive-scroll": "^5.0.0-beta.13",
     "next": "14.2.4",
     "react": "^18",
     "react-confetti": "^6.1.0",
@@ -22,6 +21,7 @@
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
+    "@types/estree": "^1.0.5",
     "postcss": "^8",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.4",

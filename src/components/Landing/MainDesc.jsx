@@ -46,16 +46,17 @@ const MainDesc = ({ marqref, descRef }) => {
 
 
 
-  const { scrollYProgress } = useScroll()
-  const movement = useTransform(scrollYProgress, [0, 0.3], [0, 600])
-  useMotionValueEvent(scrollYProgress, 'change', (x) => {
-    setTransformY(movement.get())
-    // console.log(scrollYProgress.get());
-    // console.log(-3.2 * movement.get());
-  })
+  // const { scrollYProgress } = useScroll()
+  // const movement = useTransform(scrollYProgress, [0, 0.3], [0, 600])
+  // useMotionValueEvent(scrollYProgress, 'change', (x) => {
+  //   setTransformY(movement.get())
+  //   // console.log(scrollYProgress.get());
+  //   // console.log(-3.2 * movement.get());
+  // })
 
   return (
-    <motion.section ref={descRef} style={{ y: marqrefinview && -3.2 * transfromY }} className='relative w-sc bg-white '>
+    // <motion.section ref={descRef} style={{ y: marqrefinview && -3.2 * transfromY }} className='relative w-sc bg-white '>
+    <motion.section data-scroll data-scroll-speed='1.2' data-scroll-offset='-350%,150%' className='relative w-sc bg-white '>
       <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-full rounded-tl-full '></span>
       {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
       <div className='w-full h-full  pt-[2.5rem] md:pt-[4.7rem]  '>

@@ -317,7 +317,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-start flex-shrink-[5] gap-5 pl-6 pr-12 py-3  max-w-[350px] max-h-[254px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white ">
+            <div className="flex flex-col items-start flex-shrink-[5] gap-5   px-3 lg:px-6 py-3   max-w-[350px] max-h-[254px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white ">
               <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text [-webkit-background-clip:text] text-transparent mt-2 `}>30</h1>
               <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#020617CC]/[.8]`}>upcoming placement drives
                 finalized to be organized in
@@ -325,7 +325,7 @@ const About = () => {
             </div>
           </div>
 
-          <p className={`max-w-[700px] ${GeneralMedium.className} font-medium  text-[18px] md:text-xl leading-[2] tracking-wide px-3 md:px-10 py-6 bg-gradient-to-r from-[#41417C] to-[#7676E2] text-white rounded-[10px] text-start md:text-center mt-4 `}>Our network continues to grow as we forge new partnerships
+          <p className={`max-w-[700px] ${GeneralMedium.className} font-medium  text-[18px] md:text-xl !leading-[2] tracking-wide px-3 md:px-10 py-6 bg-gradient-to-r from-[#41417C] to-[#7676E2] text-white rounded-[10px] text-start md:text-center mt-4 `}>Our network continues to grow as we forge new partnerships
             and expand our reach. By collaborating with more colleges and
             companies, we aim to provide even greater opportunities for
             freshers and enhance their career prospects</p>

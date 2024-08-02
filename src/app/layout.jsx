@@ -4,7 +4,7 @@ import "./globals.css";
 import { GeneralRegular } from "@/utils/fonts";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/footer/Footer";
-import SmoothScroller from "@/components/SmoothScroller";
+
 
 
 export const metadata = {
@@ -15,21 +15,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  console.log('shva');
+
 
   return (
-    <html lang="en" id="html" >
+    <html lang="en" id="html"  >
       <head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
       </head>
-      <body className={`${GeneralRegular.className} relative  overflow-hidden`}>
-        <SmoothScroller>
+      <body className={`${GeneralRegular.className} relative overflow-hidden `}>
 
-          <Navbar />
-          {children}
-          <Footer />
-        </SmoothScroller>
+
+        <Navbar />
+        {children}
+        <Footer />
+
       </body>
     </html>
   )

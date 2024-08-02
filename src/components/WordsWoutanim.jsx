@@ -2,7 +2,7 @@ import React from 'react'
 
 const WordsWoutanim = ({ children, isclip }) => {
     const words = children.split(' ')
-    // console.log(typeof words);
+
     return (
         <>
             {
