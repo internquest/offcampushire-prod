@@ -16,7 +16,7 @@ const Marquee = ({ marqref }) => {
 
 
     return (
-        <section data-scroll data-scroll-speed='.5' data-scroll-offset='-130%,50%' data-scroll-class='isInview' className={`text-white opacity-0 translate-y-0 pb-36  relative bg-gradient-to-r from-[#6161A6] to-[#252540]  `}>
+        <section data-scroll data-scroll-speed='.2' data-scroll-offset='-100%,100%' data-scroll-class='isInview' className={`text-white opacity-0 translate-y-0 pb-6  relative bg-gradient-to-r from-[#6161A6] to-[#252540]  `}>
             <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-tr-full rounded-tl-full '></span>
             <div className='w-full h-full pt-[3.13rem] lg:pt-[5.31rem]  lg:pb-[] pb-[4.6rem]  '>
                 <div className='mx-auto   lg:max-w-[90rem] px-[1.3rem]'>
