@@ -9,7 +9,7 @@ import Underneath from "@/components/Landing/Underneath";
 import { useMotionValueEvent, useScroll, motion, useTransform, AnimateSharedLayout, AnimatePresence, LayoutGroup, delay } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 
 
 
@@ -20,16 +20,19 @@ const Home = () => {
   const underref = useRef(null)
   const [loading, setLoading] = useState(true)
 
-
   useEffect(() => {
+
     (
 
       async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll()
-      }
-    )()
 
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+
+        const locomotiveScroll = new LocomotiveScroll();
+
+      }
+
+    )()
 
   },)
   // console.log(loading);
