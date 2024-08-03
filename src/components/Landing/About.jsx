@@ -42,9 +42,9 @@ const About = () => {
 
   //   return () => cleanupFunctions.forEach(x => x())
   // }, [])
-  const { scrollYProgress } = useScroll()
+  // const { scrollYProgress } = useScroll()
 
-  const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-1019, -3020])
+  // const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-1019, -3020])
   // useMotionValueEvent(scrollYProgress, 'change', (x) => {
   //   setTransformY(movement.get())
   // console.log(scrollYProgress.get());
@@ -52,8 +52,33 @@ const About = () => {
   // })
   // if(scrollYProgress>)
 
+
+  const buttonVariants = {
+    hover: {
+      background: 'linear-gradient(to bottom right,#0055ff,#21d6ef)'
+    },
+    initial: {
+      opacity: 0,
+
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 1.9,
+        delay: 1
+
+      }
+    }
+  }
+
+  const textVariant = {
+    hover: {
+      color: '#f5fafe'
+    }
+  }
   return (
-    <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  ">
+    <motion.div data-scroll data-scroll-speed='1' data-scroll-offset='-1000%,1000%' className="w-screen mt-16 bg-white overflow-hidden  ">
+      {/* <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  "> */}
 
 
 
@@ -73,7 +98,7 @@ const About = () => {
       </div> */}
 
 
-      <div className="bg-[url('https://ik.imagekit.io/0ytuu3ujr/img-7-2560x1200.webp')] bg-center bg-cover min-h-screen pt-16 text-center flex flex-col px-3 gap-28">
+      <div className="bg-[url('https://ik.imagekit.io/0ytuu3ujr/img-7-2560x1200.webp')] bg-center bg-cover min-h-screen pt-16 text-center flex flex-col px-3 gap-14">
         <div className="flex flex-col items-center gap-7">
 
           <h1 className={` ${MonaBold.className} font-extrabold text-[44px] md:text-[64px] text-start tracking-tight mt-4 text-[#030326CC]/[.8] `}>Freshers and New Grads!</h1>
@@ -82,9 +107,20 @@ const About = () => {
             explore, apply for and attend exclusive off-campus placement drives
             happening nationwide exclusively in collaboration with emerging
             startups & university partners!</p>
+
+          <div className="w-full flex justify-center   ">
+            <div className="mx-auto ">
+
+              <motion.button whileHover='hover' initial='initial' animate='animate' variants={buttonVariants} className={`-ml-6 mx-auto  px-2   ${GeneralMedium.className} rounded-[5px]  text-2xl bg-gradient-to-r from-[#6161A6] to-[#252540] mt-4 text`}>
+                <motion.span variants={textVariant} className={`${MonaSemibold.className} mx-auto bg-clip-text h-[36px] w-[110px] [-webkit-background-clip:text] inline-block whitespace-nowrap border-none  tracking-wide leading-7 outline-none bg-gradient-to-br px-2 py-1 from-[#FFFFFF] to-[#F2F4FE] text-[1rem]  font-medium text-transparent`}>
+                  Get Started
+                </motion.span>
+              </motion.button>
+            </div>
+          </div>
         </div>
         <div className="max-w-[1210px] mx-auto   ">
-          <Image src={inform} alt="" />
+          <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2077.png' width={1000} height={569} alt="" />
           {/* <div className={` ${GeneralMedium.className} font-medium w-[302px] rounded-tl-3xl h-[677px]  pt-8 bg-gradient-to-b from-[#020617] to-[#0B217D] pl-8 pr-14  text-white text-start flex flex-col gap-7 `}>
             <h1 className={` -ml-3 bg-gradient-to-r from-[#FFFFFF] to-[#EBEBFF] bg-clip-text text-transparent    ${GeneralSemibold.className} font-medium`}>offcampushire</h1>
             <h2>Home</h2>
@@ -125,10 +161,10 @@ const About = () => {
 
 
 
-      <p className={`flex justify-center ${MonaRegular.className} my-20 font-semibold text-[16px] md:text-[26px] text-center px-2 leading-[1.2] tracking-normal `}>Decode your offcampus placement journey with OffCampusHire</p>
+      <p className={`flex justify-center ${MonaRegular.className} mx-auto bg-gradient-to-r from-[#374151] to-[#6161A6] bg-clip-text text-transparent [-webkit-background-clip:text]  my-20 font-medium w-[481px] text-[16px] md:text-[28px] text-center  leading-[2] tracking-normal `}>Decode your off-campus placement journey with OffCampusHire</p>
 
 
-      <div className="max-w-[900px] text-[1rem] md:text-[18px] overflow-auto   mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[10px] bg-[#282C34] px-9 py-16">
+      <div className="max-w-[900px] h-[705px] text-[1rem] md:text-[18px] overflow-auto overflow-y-auto  mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[30px] bg-[#282C34] px-9 py-16">
         <pre>
           <code className="">
             <span className=" inline-block mb-1">
@@ -287,50 +323,60 @@ const About = () => {
         </pre>
       </div>
 
-      <div className="process-bg flex flex-col items-center  bg-cover bg-center overflow-hidden mt-20">
+      <div className="process-bg flex flex-col items-center h-[656px] bg-cover bg-center rounded-[40px] overflow-hidden mt-20">
         <div className={`max-w-[1280px] flex flex-col items-center gap-16 rounded-[20px] px-4 flex-shrink-5  py-32 mx-auto`}>
-          <p className={`max-w-[691px] ${GeneralMedium.className} font-medium mb-4 text-start md:text-center text-[18px] md:text-[20px] leading-[2] tracking-normal flex  text-white flex-shrink`}>Our commitment to transforming the off-campus placement ecosystem is
+          <p className={`max-w-[691px] ${GeneralMedium.className} font-medium mb-4 text-start md:text-center text-[18px] md:text-[22px] leading-[2] tracking-[.01em] flex  text-white flex-shrink`}>Our commitment to transforming the off-campus placement ecosystem is
             reflected in our impressive statistics and strong network of collaborations
             and partnerships. Here’s a glimpse of the impact we’ve made so far</p>
 
-          <div className="flex md:flex-row flex-col items-start gap-6 lg:gap-6 justify-center md:gap-3  overflow-hidden ">
-            <div className="flex flex-col flex-shrink-[5] gap-6 bmt:self-stretch">
-              <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-3  max-w-[350px] max-h-[161px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white  ">
-                <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text [-webkit-background-clip:text] text-transparent mt-2 `}>150+</h1>
-                <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#020617CC]/[.8]`}>startup partners</p>
-              </div>
-              <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-3  max-w-[350px] max-h-[209px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white ">
-                <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text [-webkit-background-clip:text] text-transparent mt-2 `}>30+</h1>
-                <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#020617CC]/[.8]`}>ongoing university partnership
-                  talks</p>
-              </div>
-            </div>
-            <div className="flex flex-col flex-shrink-[5] gap-6 bmt:self-stretch">
-              <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-3  max-w-[350px] max-h-[161px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white ">
-                <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text [-webkit-background-clip:text] text-transparent mt-2 `}>10+</h1>
-                <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#020617CC]/[.8]`}>college partners</p>
-              </div>
-              <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-3  max-w-[350px] max-h-[209px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white ">
-                <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text [-webkit-background-clip:text] text-transparent mt-2 `}>50+</h1>
-                <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#020617CC]/[.8]`}>ongoing startup partnership
-                  talks</p>
-              </div>
-            </div>
 
-            <div className="flex flex-col items-start flex-shrink-[5] gap-5   px-3 lg:px-6 py-3   max-w-[350px] max-h-[254px] rounded-[10px] border-solid border-[2px] border-[#E2E8F0] bg-white ">
-              <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text [-webkit-background-clip:text] text-transparent mt-2 `}>30</h1>
-              <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#020617CC]/[.8]`}>upcoming placement drives
-                finalized to be organized in
-                2024</p>
-            </div>
-          </div>
 
-          <p className={`max-w-[700px] ${GeneralMedium.className} font-medium  text-[18px] md:text-xl !leading-[2] tracking-wide px-3 md:px-10 py-6 bg-gradient-to-r from-[#41417C] to-[#7676E2] text-white rounded-[10px] text-start md:text-center mt-4 `}>Our network continues to grow as we forge new partnerships
-            and expand our reach. By collaborating with more colleges and
-            companies, we aim to provide even greater opportunities for
-            freshers and enhance their career prospects</p>
         </div>
       </div>
+
+
+      <div className="flex md:flex-row flex-col items-start gap-6 lg:gap-6 justify-center md:gap-3 mt-6 pt-6  overflow-hidden ">
+        <div className="flex flex-col flex-shrink-[5] gap-6 bmt:self-stretch">
+          <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] max-h-[161px] rounded-[20px] bg-gradient-to-r from-[#F6F9FE] to-[#CCCCFF]  ">
+            <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] text-[#3B424A] tracking-normal  mt-2 `}>150+</h1>
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#3B424A]`}>startup partners</p>
+          </div>
+          <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] max-h-[209px] rounded-[20px] text-white bg-gradient-to-r from-[#14253F] to-[#3461A5E5] ">
+            <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>30+</h1>
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal `}>ongoing university partnership
+              talks</p>
+          </div>
+        </div>
+        <div className="flex flex-col flex-shrink-[5] gap-6 bmt:self-stretch">
+          <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] max-h-[161px] rounded-[20px] text-white bg-gradient-to-r from-[#AE85F7] to-[#2D3195CC] ">
+            <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>10+</h1>
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal `}>college partners</p>
+          </div>
+          <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] max-h-[209px] rounded-[20px] text-white bg-gradient-to-r from-[#FDA57C] to-[#FB85B8] ">
+            <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>50+</h1>
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal `}>ongoing startup partnership
+              talks</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-start flex-shrink-[5] gap-5   px-3 lg:px-6 py-6   max-w-[360px] max-h-[276px] text-white rounded-[20px] bg-gradient-to-r from-[#6E67FD] to-[#3DCAFF] ">
+          <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>30</h1>
+          <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] mr-6 tracking-normal `}>upcoming placement drives
+            finalized to be organized in
+            2024</p>
+        </div>
+      </div>
+
+
+
+      <div className={`max-w-[700px] ${GeneralMedium.className} font-medium mx-auto  mt-9 pt-6 text-[18px] md:text-xl !leading-[2] tracking-wide px-3 md:px-10 py-6  text-white rounded-[250px] bg-[#F4F4FE]  text-start md:text-center  `}>
+        <p className="bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text text-transparent" >Our network continues to grow as we forge new partnerships
+          and expand our reach. By collaborating with more colleges and
+          companies, we aim to provide even greater opportunities for
+          freshers and enhance their career prospects
+        </p>
+      </div>
+
 
       <Testimonials />
       {/* <h1

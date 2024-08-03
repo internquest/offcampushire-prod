@@ -22,6 +22,11 @@
   opacity: 1;
 }
 
+.isUnder {
+  z-index: -1;
+  opacity: 1;
+}
+
 .load {
   width: 100%;
   height: 100%;
