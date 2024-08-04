@@ -77,7 +77,7 @@ const About = () => {
     }
   }
   return (
-    <motion.div data-scroll data-scroll-speed='1' data-scroll-offset='-1000%,1000%' className="w-screen mt-16 bg-white overflow-hidden  ">
+    <motion.div data-scroll data-scroll-speed='1.6' data-scroll-offset='-1050%,800%' className="w-screen mt-16 bg-white overflow-hidden  ">
       {/* <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  "> */}
 
 
@@ -369,8 +369,8 @@ const About = () => {
 
 
 
-      <div className={`max-w-[700px] ${GeneralMedium.className} font-medium mx-auto  mt-9 pt-6 text-[18px] md:text-xl !leading-[2] tracking-wide px-3 md:px-10 py-6  text-white rounded-[250px] bg-[#F4F4FE]  text-start md:text-center  `}>
-        <p className="bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] bg-clip-text text-transparent" >Our network continues to grow as we forge new partnerships
+      <div className={`max-w-[700px] ${GeneralMedium.className} font-medium mx-auto  mt-14  text-[18px] max-w-[880px] min-h-[324px] md:text-[1.3rem] !leading-[2] tracking-wide px-3 md:px-20  flex items-center justify-center  text-white rounded-[250px] bg-[#F4F4FE]  text-start md:text-center  `}>
+        <p className="bg-gradient-to-r from-[#7F73FF] to-[#42B1FF]  bg-clip-text text-transparent mx-8 " >Our network continues to grow as we forge new partnerships
           and expand our reach. By collaborating with more colleges and
           companies, we aim to provide even greater opportunities for
           freshers and enhance their career prospects
@@ -379,6 +379,26 @@ const About = () => {
 
 
       <Testimonials />
+
+      <div className="bg-gradient-to-b from-[#0066FF] to-[#605995] mx-auto max-w-[996px] min-h-[381px] rounded-[20px] flex items-center flex-col mt-16 justify-center">
+        <div className="max-w-[525px]">
+
+          <p className={`text-[2.2rem] text-center font-medium leading-[2] tracking-normal text-white ${GeneralMedium.className}`} >Are you ready to start your
+            <br />
+            off-campus placement journey?</p>
+          <div className="w-full flex justify-center   ">
+            <div className="mx-auto ">
+
+              <motion.button whileHover='hover' initial='initial' animate='animate' variants={buttonVariants} className={`-ml-2 mx-auto  px-2   ${GeneralMedium.className} rounded-[5px]  text-2xl bg-[#EFF4F9] mt-4 text`}>
+                <motion.span variants={textVariant} className={`${MonaSemibold.className} mx-auto bg-clip-text h-[36px] w-[110px]  inline-block whitespace-nowrap border-none  tracking-wide leading-7 outline-none  text-[#24201F] px-2 py-1  text-[1rem]  font-medium `}>
+                  Get Started
+                </motion.span>
+              </motion.button>
+            </div>
+          </div>
+        </div>
+
+      </div>
       {/* <h1
         className={`mx-auto max-w-[707px] text-left text-[1.7rem] leading-[3rem] tracking-[-0.015em] lg:text-center lg:text-[2.25rem] ${MonaMedium.className} text-[#020617]`}
       >

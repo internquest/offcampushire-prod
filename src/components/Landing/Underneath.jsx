@@ -1,24 +1,33 @@
-'use client'
-import React, { useEffect, useMemo, useState } from 'react'
-// import rectangleBox from '@/assets/About/Rectangle 40148.png'
-// import Image from 'next/image'
+
+
+
 import { GeneralMedium, MonaMedium } from '@/utils/fonts'
-import { useInView, motion, useTransform, useScroll, useMotionValueEvent, useSpring } from 'framer-motion'
+// import { useScroll, useTransform, motion, useMotionValueEvent } from 'framer-motion'
+// import { useState } from 'react'
+
 
 
 const Underneath = () => {
 
+    // const [transform, settransform] = useState(0)
+    // const { scrollYProgress } = useScroll()
+
+    // const movement = useTransform(scrollYProgress, [0.13, 2.5], [-1200, 2620])
+    // useMotionValueEvent(scrollYProgress, 'change', () => {
+    //     settransform(movement.get())
+    //     console.log(movement.get());
+    // })
 
     return (
 
-        <section data-scroll data-scroll-speed='1.4' data-scroll-offset='-250%,550%' data-scroll-class='isUnder' className={`z-[-1]  relative `}>
-            {/* <motion.section ref={underref} style={{ y: (scrollYProgress.get().toFixed(2) >= 0.13 ? movement : 0), transitionTimingFunction: 'linear', }} className={` z-[-1] relative duration-0`}> */}
+        // <div data-scroll data-scroll-speed='2.3'  className={`z-[-1]  relative`}>
+        <section data-scroll data-scroll-speed='1.2' data-scroll-offset='-3000,2050' className={` z-[-1] relative `}>
             {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />
             </div> */}
 
 
-            <motion.div className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96">
+            <div className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96">
                 {/* <motion.div style={{ y: movementbox, transitionTimingFunction: 'linear' }} className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96"> */}
                 <h2 className={`${GeneralMedium.className} font-medium text-[24px] bmt:min-w-fit md:w-[489px] text-[#020617BF]/[.75] tracking-normal text-start md:text-center leading-[1.8] `}>We're changing the way students explore the realm of offcampus placement opportunities</h2>
 
@@ -29,7 +38,7 @@ const Underneath = () => {
                 </div>
 
                 <p className={`${GeneralMedium.className} font-medium text-[24px] mt-8 w-full md:w-[685px] tracking-[.01em]  text-start md:text-center leading-[2]  text-[#6161A6]`}>The traditional off-campus placements ecosystem in India is broken. It's time for a change,and we're leading the charge</p>
-            </motion.div>
+            </div>
         </section >
     )
 }

@@ -1,6 +1,7 @@
 'use client'
 import FirstPageLoad from "@/components/FirstPageLoad";
 import About from "@/components/Landing/About";
+import DupAbout from "@/components/Landing/DupAbout";
 import Header from "@/components/Landing/Header";
 import MainDesc from "@/components/Landing/MainDesc";
 import Marquee from "@/components/Landing/Marquee";
@@ -85,6 +86,7 @@ const Home = () => {
           <Header loading={loading} />
           {/* <SmallAbout /> */}
           <Marquee marqref={marqref} />
+          {/* <DupAbout /> */}
           <MainDesc marqref={marqref} descRef={descRef} />
           <Underneath descRef={descRef} underref={underref} />
           <About />

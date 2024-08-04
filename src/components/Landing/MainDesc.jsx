@@ -56,7 +56,7 @@ const MainDesc = ({ marqref, descRef }) => {
 
   return (
     // <motion.section ref={descRef} style={{ y: marqrefinview && -3.2 * transfromY }} className='relative w-sc bg-white '>
-    <motion.section data-scroll data-scroll-speed='2.1' data-scroll-offset='-250%,250%' data-scroll-class='isInview' className='relative opacity-0 w-sc bg-white   rounded-[50px]  '>
+    <motion.section data-scroll data-scroll-speed='1.4' data-scroll-offset='-250%,350%' data-scroll-class='isInview' className='relative opacity-0 w-sc bg-white   rounded-[50px]  '>
       {/* <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-[50px] rounded-tl-[50px] '></span> */}
       {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
       <div className='w-full h-full  pt-[2.5rem] md:pt-[4.7rem]  '>
