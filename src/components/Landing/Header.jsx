@@ -86,7 +86,7 @@ export default function Header({ loading }) {
             </motion.div>
 
             <h1 className={` mx-4 mt-24 md:mx-auto font-medium  text-start   lg:text-center  text-[36px] pr-4 sm:hidden md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off- campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
-            <h1 className={` mx-auto mt-56 font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+            <h1 className={` mx-auto mt-48 font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
             <div className="w-full flex justify-center   ">
