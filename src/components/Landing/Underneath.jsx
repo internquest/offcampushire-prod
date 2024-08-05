@@ -21,7 +21,7 @@ const Underneath = () => {
     return (
 
         // <div data-scroll data-scroll-speed='2.3'  className={`z-[-1]  relative`}>
-        <section data-scroll data-scroll-speed='1.2' data-scroll-offset='-3000,2050' className={` z-[-1] relative `}>
+        <section data-scroll data-scroll-speed='1.4' data-scroll-offset='-600%,350%' className={` z-[-1] relative `}>
             {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />
             </div> */}

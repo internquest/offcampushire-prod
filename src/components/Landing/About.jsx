@@ -77,7 +77,7 @@ const About = () => {
     }
   }
   return (
-    <motion.div data-scroll data-scroll-speed='1.6' data-scroll-offset='-1050%,800%' className="w-screen mt-16 bg-white overflow-hidden  ">
+    <motion.div data-scroll data-scroll-speed='3.5' data-scroll-offset='-450%,800%' className="w-screen mt-16 bg-white overflow-hidden  ">
       {/* <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  "> */}
 
 

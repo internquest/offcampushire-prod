@@ -19,7 +19,7 @@ import Image from 'next/image'
 const Footer = () => {
     return (
 
-        <div className='z-[5] md:z-0 relative   pt-[60px] bg-[#fff9f4] md:sticky   md:h-screen top-auto bottom-[0%] left-[0%] right-[0%]   text-[14px] leading-[20px] text-[#333]  '>
+        <div id='footer' className='z-[5] md:z-0 relative   pt-[60px] bg-[#fff9f4] md:sticky   md:h-screen top-auto bottom-[0%] left-[0%] right-[0%]   text-[14px] leading-[20px] text-[#333]  '>
             <div className='z-[1] pointer-events-none text-center absolute flex justify-center items-center w-full top-0 bottom-auto left-0 right-0'>
                 <img src={bgtop} alt="" className='align-middle max-w-full inline-block border-0' loading='lazy' srcSet={`${bgtop500} 500w,${bgtop800} 800w,${bgtop1080} 1080w,${bgtop1600} 1600w`} />
             </div>
