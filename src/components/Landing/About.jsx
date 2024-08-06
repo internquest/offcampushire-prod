@@ -77,8 +77,8 @@ const About = () => {
     }
   }
   return (
-    <motion.div data-scroll data-scroll-speed='2' data-scroll-section data-scroll-offset='-3600,4270' className="w-screen mt-16 bg-white overflow-hidden  ">
-      {/* <motion.div className="w-screen mt-16 bg-white overflow-hidden  "> */}
+    <motion.div data-scroll data-scroll-speed='1.3' data-scroll-section data-scroll-offset='-5500,5800' className="w-screen  bg-white overflow-hidden   ">
+      {/* <motion.div className="w-screen mt-16 bg-white overflow-hidden  ">
 
 
 
@@ -91,7 +91,7 @@ const About = () => {
         <h2 className={`${GeneralMedium.className} font-medium text-[26px] bmt:min-w-fit md:w-[675px] tracking-normal text-start md:text-center leading-[1.8] `}>We're changing the way students explore the realm of offcampus placement opportunities</h2>
         <p className={`${GeneralMedium.className} font-medium text-[22px] w-full md:w-[625px] tracking-normal  text-start md:text-center leading-[1.8]  text-[#64748B]`}>The traditional off-campus placements ecosystem in India is broken. It's time for a change,and we're leading the charge</p>
         <div className=" mx-auto w-full  md:w-[575px] border-solid border-[5px] mt-28 md:mt-36 border-[#E2E8F0] rounded-[20px]  md:h-[525px] flex justify-center items-center bg-white  pl-5  pt-10 pb-14 bmt:mx-2">
-          <h1 className={` mx-5 ${MonaMedium.className} font-medium text-[20px] md:text-[36px] leading-[1.6] tracking-wide w-[440px] text-start pb-8`}>Our goal is to<span className="bg-gradient-to-r from-[#0066FF] to-[#003D99] [-webkit-background-clip:text] bg-clip-text text-transparent px-2">upgrade,<br />reimagine, and revolutionize</span>the off-
+          <h1 className={` mx-5 ${MonaMedium.className} font-medium text-[20px] md:text-[36px] leading-[1.6] tracking-wide w-[440px] text-start pb-8`}>Our goal is to<span className="bg-gradient-to-r from-[#0066FF] to-[#003D99] [-webkackground-clip:text] bg-clip-text text-transparent px-2">upgrade,<br />reimagine, and revolutionize</span>the off-
             campus placements
             scenario in India</h1>
         </div>
