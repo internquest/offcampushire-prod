@@ -21,10 +21,10 @@ const Landfooter = () => {
 
 
 
-        <div id='footer' data-scroll data-scroll-section data-scroll-speed='1.5' data-scroll-offset='-3500,3000' className=' relative    pt-[60px]     md:h-screen    text-[14px] leading-[20px] text-[#333]  '>
-            {/* <div className='z-[1] pointer-events-none text-center absolute flex justify-center items-center w-full top-0 bottom-auto left-0 right-0'>
+        <div id='footer' className=' relative duration-100   pt-[60px] bg-[#fff9f4]    md:h-screen    text-[14px] leading-[20px] text-[#333]  '>
+            <div className='z-[1] pointer-events-none text-center absolute flex justify-center items-center w-full top-0 bottom-auto left-0 right-0'>
                 <img src={bgtop} alt="" className='align-middle max-w-full inline-block border-0' loading='lazy' srcSet={`${bgtop500} 500w,${bgtop800} 800w,${bgtop1080} 1080w,${bgtop1600} 1600w`} />
-            </div> */}
+            </div>
             <div className='bg-gradient-to-r from-[#020617E5]/[.9] to-[#0B217DE5]/[.9] w-full pt-[71px] relative top-0'>
                 <div className=''>
                     <div className='w-full bg-[#0f080333] h-[1px]'></div>

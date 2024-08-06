@@ -23,14 +23,14 @@ const Underneath = () => {
 
     return (
 
-        <div data-scroll data-scroll-section data-scroll-speed='1' data-scroll-offset='-2060,1700' className={`bg-white rounded-[50px] relative`}>
+        <div data-scroll data-scroll-section data-scroll-speed='1.4' data-scroll-offset='-2060,2000' className={`bg-white duration-100 relative`}>
             {/* <motion.section style={{ y: (scrollYProgress.get().toFixed(2) > 0.31 ? transform : 0) }} className={` z-[-1] relative `}> */}
             {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />
             </div> */}
 
 
-            <div className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px]  pt-10 px-3 mb-28 md:mb-96">
+            <div className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96">
                 {/* <motion.div style={{ y: movementbox, transitionTimingFunction: 'linear' }} className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96"> */}
                 <h2 className={`${GeneralMedium.className} font-medium text-[24px] bmt:min-w-fit md:w-[489px] text-[#020617BF]/[.75] tracking-normal text-start md:text-center leading-[1.8] `}>We're changing the way students explore the realm of offcampus placement opportunities</h2>
 
@@ -43,7 +43,7 @@ const Underneath = () => {
                 <p className={`${GeneralMedium.className} font-medium text-[24px] mt-8 w-full md:w-[685px] tracking-[.01em]  text-start md:text-center leading-[2]  text-[#6161A6]`}>The traditional off-campus placements ecosystem in India is broken. It's time for a change,and we're leading the charge</p>
             </div>
             {/* </motion.section > */}
-        </div>
+        // </div>
     )
 }
 
