@@ -4,6 +4,7 @@ import Footer from "@/components/footer/Footer";
 import About from "@/components/Landing/About";
 import DupAbout from "@/components/Landing/DupAbout";
 import Header from "@/components/Landing/Header";
+import Landfooter from "@/components/Landing/Landfooter";
 import MainDesc from "@/components/Landing/MainDesc";
 import Marquee from "@/components/Landing/Marquee";
 import SmallAbout from "@/components/Landing/SmallAbout";
@@ -64,6 +65,7 @@ const Home = () => {
   }, [])
 
 
+
   return (
     <AnimatePresence onExitComplete={() => {
       const html = document.getElementById('html')
@@ -84,7 +86,7 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div key='notloader' className="bg-white relative z-[5] overflow-hidden overflow-y-hidden w-screen  flex flex-col rounded-br-[65px] rounded-bl-[65px]">
+        <div key='notloader' className="bg-white relative z-[5] overflow-hidden overflow-y-hidden w-screen gap-0  flex flex-col rounded-br-[65px] rounded-bl-[65px]">
 
           <Header loading={loading} />
           {/* <SmallAbout /> */}
@@ -93,7 +95,7 @@ const Home = () => {
           <MainDesc marqref={marqref} descRef={descRef} />
           <Underneath descRef={descRef} underref={underref} />
           <About />
-          {/* <Footer/> */}
+          <Landfooter />
         </div>
       )}
       {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.9s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}

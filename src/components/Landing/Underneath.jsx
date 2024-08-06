@@ -1,7 +1,9 @@
 
 
 
-import { GeneralMedium, MonaMedium } from '@/utils/fonts'
+import { GeneralMedium, MonaMedium, } from '@/utils/fonts'
+import { useMotionValueEvent, useTransform, motion, useScroll } from 'framer-motion'
+import { useState } from 'react'
 // import { useScroll, useTransform, motion, useMotionValueEvent } from 'framer-motion'
 // import { useState } from 'react'
 
@@ -9,19 +11,20 @@ import { GeneralMedium, MonaMedium } from '@/utils/fonts'
 
 const Underneath = () => {
 
-    // const [transform, settransform] = useState(0)
-    // const { scrollYProgress } = useScroll()
+    const [transform, settransform] = useState(0)
+    const { scrollYProgress } = useScroll()
 
-    // const movement = useTransform(scrollYProgress, [0.13, 2.5], [-1200, 2620])
-    // useMotionValueEvent(scrollYProgress, 'change', () => {
-    //     settransform(movement.get())
-    //     console.log(movement.get());
-    // })
+    const movement = useTransform(scrollYProgress, [0.31, 0.6], [-1400, -1400])
+    useMotionValueEvent(scrollYProgress, 'change', () => {
+        settransform(movement.get())
+        // console.log(scrollYProgress.get());
+        // console.log(movement.get());
+    })
 
     return (
 
-        // <div data-scroll data-scroll-speed='2.3'  className={`z-[-1]  relative`}>
-        <section data-scroll data-scroll-speed='1.4' data-scroll-offset='-600%,350%' className={` z-[-1] relative `}>
+        <div data-scroll data-scroll-section data-scroll-speed='1.4' data-scroll-offset='-2060,2000' className={`bg-white duration-100 relative`}>
+            {/* <motion.section style={{ y: (scrollYProgress.get().toFixed(2) > 0.31 ? transform : 0) }} className={` z-[-1] relative `}> */}
             {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />
             </div> */}
@@ -39,7 +42,8 @@ const Underneath = () => {
 
                 <p className={`${GeneralMedium.className} font-medium text-[24px] mt-8 w-full md:w-[685px] tracking-[.01em]  text-start md:text-center leading-[2]  text-[#6161A6]`}>The traditional off-campus placements ecosystem in India is broken. It's time for a change,and we're leading the charge</p>
             </div>
-        </section >
+            {/* </motion.section > */}
+        // </div>
     )
 }
 

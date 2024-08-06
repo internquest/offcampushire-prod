@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Testimonials from "./Testimonials";
 import inform from '@/assets/Landing/Group 43 1.svg'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion'
 
 const About = () => {
   const [transfromY, setTransformY] = useState(0)
@@ -42,14 +42,14 @@ const About = () => {
 
   //   return () => cleanupFunctions.forEach(x => x())
   // }, [])
-  // const { scrollYProgress } = useScroll()
+  const { scrollYProgress } = useScroll()
 
-  // const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-1019, -3020])
-  // useMotionValueEvent(scrollYProgress, 'change', (x) => {
-  //   setTransformY(movement.get())
-  // console.log(scrollYProgress.get());
-  //   // console.log(-3.2 * movement.get());
-  // })
+  const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-719, -2020])
+  useMotionValueEvent(scrollYProgress, 'change', (x) => {
+    // setTransformY(movement.get())
+    console.log(scrollYProgress.get());
+    // console.log(-3.2 * movement.get());
+  })
   // if(scrollYProgress>)
 
 
@@ -77,8 +77,8 @@ const About = () => {
     }
   }
   return (
-    <motion.div data-scroll data-scroll-speed='3.5' data-scroll-offset='-450%,800%' className="w-screen mt-16 bg-white overflow-hidden  ">
-      {/* <motion.div style={{ y: movement }} className="w-screen mt-16 bg-white overflow-hidden  "> */}
+    <motion.div data-scroll data-scroll-speed='2' data-scroll-section data-scroll-offset='-3600,4270' className="w-screen mt-16 bg-white overflow-hidden  ">
+      {/* <motion.div className="w-screen mt-16 bg-white overflow-hidden  "> */}
 
 
 
@@ -164,7 +164,7 @@ const About = () => {
       <p className={`flex justify-center ${MonaRegular.className} mx-auto bg-gradient-to-r from-[#374151] to-[#6161A6] bg-clip-text text-transparent [-webkit-background-clip:text]  my-20 font-medium w-[481px] text-[16px] md:text-[28px] text-center  leading-[2] tracking-normal `}>Decode your off-campus placement journey with OffCampusHire</p>
 
 
-      <div className="max-w-[900px] h-[705px] text-[1rem] md:text-[18px] overflow-auto overflow-y-auto  mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[30px] bg-[#282C34] px-9 py-16">
+      <div className="max-w-[900px] h-[705px] text-[1rem] md:text-[18px] overflow-auto   mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[30px] bg-[#282C34] px-9 py-16">
         <pre>
           <code className="">
             <span className=" inline-block mb-1">

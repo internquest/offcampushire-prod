@@ -9,7 +9,7 @@ import WordsWoutanim from "../WordsWoutanim";
 import { useWindowSize } from "@uidotdev/usehooks";
 
 
-export default function Header({ loading }) {
+export default function Header({ loading, movement }) {
 
   const { width: windowWidth } = useWindowSize()
   // console.log(windowWidth);
