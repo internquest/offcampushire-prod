@@ -86,7 +86,7 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div key='notloader' className="bg-white relative z-[5] overflow-hidden overflow-y-hidden w-screen gap-0  flex flex-col rounded-br-[65px] rounded-bl-[65px]">
+        <div key='notloader' className="bg-white relative z-[5] overflow-hidden  w-screen gap-0  flex flex-col ">
 
           <Header loading={loading} />
           {/* <SmallAbout /> */}

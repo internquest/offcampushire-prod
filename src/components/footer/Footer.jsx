@@ -108,8 +108,8 @@ const Footer = () => {
                 <div className='w-full bg-[#0f080333] h-[1px]'></div>
 
                 {/* <a href="" className='w-full py-[41px] px-[16px] bm4k:flex bm4k:justify-center bm4k:items-center max-w-full inline-block '>
-                    <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
-                </a> */}
+                <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
+            </a> */}
                 <p className='text-[190px] h-[257px] leading-[1] text-white font-bold'>offcampushire</p>
 
                 <div className='w-full bg-[#0f080333] h-[1px]'></div>

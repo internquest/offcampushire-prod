@@ -77,7 +77,7 @@ const About = () => {
     }
   }
   return (
-    <motion.div data-scroll data-scroll-speed='2' data-scroll-section data-scroll-offset='-3600,4270' className="w-screen mt-16 bg-white overflow-hidden  ">
+    <motion.div data-scroll data-scroll-section className="w-screen mt-16 bg-white overflow-hidden  rounded-[50px] ">
       {/* <motion.div className="w-screen mt-16 bg-white overflow-hidden  "> */}
 
 
