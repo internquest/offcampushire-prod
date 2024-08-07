@@ -88,17 +88,19 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div key='notloader' className="bg-white relative z-[5] overflow-hidden  w-screen gap-0  flex flex-col ">
+        <>
+          <div key='notloader' className="bg-white relative z-[5] overflow-hidden rounded-br-[50px] rounded-bl-[50px] w-screen gap-0  flex flex-col ">
 
-          <Header loading={loading} />
-          {/* <SmallAbout /> */}
-          <Marquee marqref={marqref} />
-          {/* <DupAbout /> */}
-          <MainDesc marqref={marqref} descRef={descRef} />
-          <Underneath descRef={descRef} underref={underref} />
-          <About />
+            <Header loading={loading} />
+            {/* <SmallAbout /> */}
+            <Marquee marqref={marqref} />
+            {/* <DupAbout /> */}
+            <MainDesc marqref={marqref} descRef={descRef} />
+            <Underneath descRef={descRef} underref={underref} />
+            <About />
+          </div>
           <Landfooter />
-        </div>
+        </>
       )}
       {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.9s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}
 
