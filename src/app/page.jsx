@@ -61,7 +61,9 @@ const Home = () => {
       html.style.overflow = 'hidden',
       html.style.position = 'fixed',
       nav.style.opacity = 0
-
+    return () => {
+      footer.style.display = ''
+    }
   }, [])
 
 

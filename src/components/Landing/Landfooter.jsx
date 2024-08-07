@@ -21,7 +21,7 @@ const Landfooter = () => {
         <>
 
 
-            <div id='footer' className=' relative duration-100   pt-[60px] overflow-hidden  bm4k:hidden  lg:min-h-screen    text-[14px] leading-[20px] text-[#333]   '>
+            <div className=' relative z-[5] md:z-[-2]  md:sticky top-auto bottom-[0%] left-[0%] right-[0%]  pt-[60px] overflow-hidden  bm4k:hidden  lg:min-h-screen    text-[14px] leading-[20px] text-[#333]   '>
                 <div className='z-[1] pointer-events-none text-center absolute flex justify-center items-center w-full top-0 bottom-auto left-0 right-0'>
                     <img src={bgtop} alt="" className='align-middle max-w-full inline-block border-0' loading='lazy' srcSet={`${bgtop500} 500w,${bgtop800} 800w,${bgtop1080} 1080w,${bgtop1600} 1600w`} />
                 </div>
@@ -143,7 +143,7 @@ const Landfooter = () => {
                 </div>
             </div>
 
-            <div id='footer' className=' relative duration-100   pt-[60px] overflow-hidden hidden  bm4k:block  lg:h-max    text-[14px] leading-[20px] text-[#333]   '>
+            <div className=' relative  z-[5] md:z-[-2]  md:sticky top-auto bottom-[0%] left-[0%] right-[0%]  pt-[60px] overflow-hidden hidden  bm4k:block  lg:h-max    text-[14px] leading-[20px] text-[#333]   '>
                 <div className='z-[1] pointer-events-none text-center absolute flex justify-center items-center w-full top-0 bottom-auto left-0 right-0'>
                     <img src={bgtop} alt="" className='align-middle max-w-full inline-block border-0' loading='lazy' srcSet={`${bgtop500} 500w,${bgtop800} 800w,${bgtop1080} 1080w,${bgtop1600} 1600w`} />
                 </div>
