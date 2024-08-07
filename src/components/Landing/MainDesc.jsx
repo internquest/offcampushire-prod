@@ -13,7 +13,7 @@ const MainDesc = ({ marqref, descRef }) => {
   let index = 0
   let interval = 1000
 
-  const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+  // const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
   // const animate = star => {
 
@@ -46,17 +46,17 @@ const MainDesc = ({ marqref, descRef }) => {
 
 
 
-  // const { scrollYProgress } = useScroll()
-  // const movement = useTransform(scrollYProgress, [0, 0.3], [0, 600])
-  // useMotionValueEvent(scrollYProgress, 'change', (x) => {
-  //   setTransformY(movement.get())
-  //   // console.log(scrollYProgress.get());
-  //   // console.log(-3.2 * movement.get());
-  // })
+  const { scrollYProgress } = useScroll()
+  const movement = useTransform(scrollYProgress, [0, 0.3], [0, 600])
+  useMotionValueEvent(scrollYProgress, 'change', (x) => {
+    setTransformY(movement.get())
+    // console.log(scrollYProgress.get());
+    // console.log(-3.2 * movement.get());
+  })
 
   return (
-    // <motion.section ref={descRef} style={{ y: marqrefinview && -3.2 * transfromY }} className='relative w-sc bg-white '>
-    <motion.section data-scroll data-scroll-speed='1.4' data-scroll-offset='-250%,350%' data-scroll-class='isInview' className='relative opacity-0 w-sc bg-white   rounded-[50px]  '>
+    <motion.section ref={descRef} style={{ y: marqrefinview && -1.8 * transfromY }} className='relative w-sc bg-white  rounded-[50px] '>
+      {/* // <motion.section data-scroll data-scroll-offset='-100%,100%' data-scroll-section data-scroll-class='isInview' className='relative opacity-0 w-sc bg-white   rounded-[50px]  '> */}
       {/* <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-[50px] rounded-tl-[50px] '></span> */}
       {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
       <div className='w-full h-full  pt-[2.5rem] md:pt-[4.7rem]  '>

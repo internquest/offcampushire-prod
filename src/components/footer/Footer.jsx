@@ -19,7 +19,7 @@ import Image from 'next/image'
 const Footer = () => {
     return (
 
-        <div className='z-[5] md:z-0 relative   pt-[60px] bg-[#fff9f4] md:sticky   md:h-screen top-auto bottom-[0%] left-[0%] right-[0%]   text-[14px] leading-[20px] text-[#333]  '>
+        <div id='footer' className='z-[5] md:z-0 relative   pt-[60px] bg-[#fff9f4] md:sticky   md:h-screen top-auto bottom-[0%] left-[0%] right-[0%]   text-[14px] leading-[20px] text-[#333]  '>
             <div className='z-[1] pointer-events-none text-center absolute flex justify-center items-center w-full top-0 bottom-auto left-0 right-0'>
                 <img src={bgtop} alt="" className='align-middle max-w-full inline-block border-0' loading='lazy' srcSet={`${bgtop500} 500w,${bgtop800} 800w,${bgtop1080} 1080w,${bgtop1600} 1600w`} />
             </div>
@@ -108,8 +108,8 @@ const Footer = () => {
                 <div className='w-full bg-[#0f080333] h-[1px]'></div>
 
                 {/* <a href="" className='w-full py-[41px] px-[16px] bm4k:flex bm4k:justify-center bm4k:items-center max-w-full inline-block '>
-                    <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
-                </a> */}
+                <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
+            </a> */}
                 <p className='text-[190px] h-[257px] leading-[1] text-white font-bold'>offcampushire</p>
 
                 <div className='w-full bg-[#0f080333] h-[1px]'></div>

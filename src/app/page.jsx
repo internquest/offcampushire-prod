@@ -1,8 +1,10 @@
 'use client'
 import FirstPageLoad from "@/components/FirstPageLoad";
+import Footer from "@/components/footer/Footer";
 import About from "@/components/Landing/About";
 import DupAbout from "@/components/Landing/DupAbout";
 import Header from "@/components/Landing/Header";
+import Landfooter from "@/components/Landing/Landfooter";
 import MainDesc from "@/components/Landing/MainDesc";
 import Marquee from "@/components/Landing/Marquee";
 import SmallAbout from "@/components/Landing/SmallAbout";
@@ -51,14 +53,19 @@ const Home = () => {
   useEffect(() => {
     const html = document.getElementById('html')
     const nav = document.getElementById('nav')
+    const footer = document.getElementById('footer')
     // console.log(nav);
+    footer.style.display = 'none'
     html.style.height = '100vh'
     html.style.width = '100vw',
       html.style.overflow = 'hidden',
       html.style.position = 'fixed',
       nav.style.opacity = 0
-
+    return () => {
+      footer.style.display = ''
+    }
   }, [])
+
 
 
   return (
@@ -81,16 +88,19 @@ const Home = () => {
           <FirstPageLoad setLoading={setLoading} />
         </motion.div>
       ) : (
-        <div key='notloader' className="bg-white relative z-[5] overflow-hidden w-screen  flex flex-col rounded-br-[65px] rounded-bl-[65px]">
+        <>
+          <div key='notloader' className="bg-white relative z-[5] overflow-hidden rounded-br-[50px] rounded-bl-[50px] w-screen gap-0  flex flex-col ">
 
-          <Header loading={loading} />
-          {/* <SmallAbout /> */}
-          <Marquee marqref={marqref} />
-          {/* <DupAbout /> */}
-          <MainDesc marqref={marqref} descRef={descRef} />
-          <Underneath descRef={descRef} underref={underref} />
-          <About />
-        </div>
+            <Header loading={loading} />
+            {/* <SmallAbout /> */}
+            <Marquee marqref={marqref} />
+            {/* <DupAbout /> */}
+            <MainDesc marqref={marqref} descRef={descRef} />
+            <Underneath descRef={descRef} underref={underref} />
+            <About />
+          </div>
+          <Landfooter />
+        </>
       )}
       {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.9s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}
 
