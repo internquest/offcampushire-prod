@@ -23,7 +23,7 @@ const Underneath = () => {
 
     return (
         <>
-            <div data-scroll data-scroll-section className={`bg-white rounded-[50px] bL4k:hidden duration-100 -mt-[55%] relative`}>
+            <div data-scroll data-scroll-section className={`bg-white rounded-[50px] bL4k:hidden duration-100 -mt-[50%] relative`}>
                 {/* <motion.section style={{ y: (scrollYProgress.get().toFixed(2) > 0.31 ? transform : 0) }} className={` z-[-1] relative `}> */}
                 {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />
@@ -65,7 +65,7 @@ const Underneath = () => {
                 </div>
                 {/* </motion.section > */}
             </div>
-            <div data-scroll data-scroll-section className={`bg-white rounded-[50px] hidden bL4k:hidden bm4k:block duration-100 -mt-[35%] relative`}>
+            <div data-scroll data-scroll-section className={`bg-white rounded-[50px] hidden bL4k:hidden bm4k:block duration-100 -mt-[30%] relative`}>
                 {/* <motion.section style={{ y: (scrollYProgress.get().toFixed(2) > 0.31 ? transform : 0) }} className={` z-[-1] relative `}> */}
                 {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />
