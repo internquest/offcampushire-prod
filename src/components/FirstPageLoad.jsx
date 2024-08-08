@@ -68,7 +68,7 @@ const FirstPageLoad = ({ setLoading }) => {
             scale: 1,
             height: '100vh',
             transition: {
-                duration: 0.5,
+                duration: 0.3,
                 ease: 'linear'
             }
 
@@ -194,8 +194,8 @@ const FirstPageLoad = ({ setLoading }) => {
                     </nav>
 
                     <motion.div className={`   border-none mt-0  border-0 rounded-bl-[25px] rounded-br-[25px]   flex justify-between items-center  bg-cover  bg-no-repeat  w-full h-full relative    flex-col px-4    `}>
-                        <h1 className={` mt-24  md:mx-auto font-medium  text-start   lg:text-center  text-[36px] pr-4 sm:hidden md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off- campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
-                        <h1 className={`mx-4 mt-48 md:mx-auto font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight md:tracking-normal w-full  md:max-w-[593px] 2xl:max-w-[950px]        ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+                        <h1 className={` mt-24  md:mx-auto font-medium  text-start   lg:text-center  text-[36px] pr-4 sm:hidden md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight  w-full  md:max-w-[550px]         ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off- campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+                        <h1 className={`mx-4 mt-32 md:mx-auto font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight  w-full  md:max-w-[550px]         ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
                         <motion.div exit={{ opacity: 0 }} transition={{ duration: 1 }} className=" flex mt-auto gap-6 md:gap-40 mb-7 justify-between w-full md:px-32  items-center" >
