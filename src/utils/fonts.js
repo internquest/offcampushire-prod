@@ -34,7 +34,15 @@ export const MonaBold = local({
   src: "./fonts/MonaSans-Bold.ttf",
   display: "swap",
 });
+export const MonaExtraBold = local({
+  src: "./fonts/MonaSans-ExtraBold.ttf",
+  display: "swap",
+});
 export const MonaCondensedEBold = local({
   src: "./fonts/MonaSansCondensed-ExtraBold.ttf",
+  display: "swap",
+});
+export const MonaCondensedBold = local({
+  src: "./fonts/MonaSansCondensed-Bold.ttf",
   display: "swap",
 });

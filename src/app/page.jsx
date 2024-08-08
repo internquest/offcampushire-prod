@@ -55,15 +55,15 @@ const Home = () => {
     const nav = document.getElementById('nav')
     const footer = document.getElementById('footer')
     // console.log(nav);
-    footer.style.display = 'none'
-    html.style.height = '100vh'
-    html.style.width = '100vw',
-      html.style.overflow = 'hidden',
+    // footer.style.display = 'none'
+    // html.style.height = '100vh'
+    // html.style.width = '100vw',
+    html.style.overflow = 'hidden',
       html.style.position = 'fixed',
       nav.style.opacity = 0
-    return () => {
-      footer.style.display = ''
-    }
+    // return () => {
+    //   footer.style.display = ''
+    // }
   }, [])
 
 
@@ -73,9 +73,9 @@ const Home = () => {
       const html = document.getElementById('html')
       const nav = document.getElementById('nav')
       // console.log(nav);
-      html.style.height = ''
-      html.style.width = '',
-        html.style.overflow = '',
+      // html.style.height = '100%'
+      // html.style.width = '100%',
+      html.style.overflow = '',
         html.style.position = '',
         nav.style.opacity = 1
       nav.style.transitionDuration = '1.6s'
@@ -89,7 +89,7 @@ const Home = () => {
         </motion.div>
       ) : (
         <>
-          <div key='notloader' className="bg-white relative z-[5] overflow-hidden rounded-br-[50px] rounded-bl-[50px] w-screen gap-0  flex flex-col ">
+          <div key='notloader' className="bg-white relative z-[5] overflow-hidden rounded-br-[50px] rounded-bl-[50px] w-full gap-0  flex flex-col ">
 
             <Header loading={loading} />
             {/* <SmallAbout /> */}
@@ -99,7 +99,7 @@ const Home = () => {
             <Underneath descRef={descRef} underref={underref} />
             <About />
           </div>
-          <Landfooter />
+          {/* <Landfooter /> */}
         </>
       )}
       {/* <span className={`${!loading ? 'opacity-0' : 'opacity-100'} fixed z-[1000] transition-opacity duration-[.9s] delay-[.6s]  overflow-hidden ease-in  bg-gray-900 left-0 top-0 w-screen h-screen  pointer-events-none `} ></span> */}
