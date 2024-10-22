@@ -42,15 +42,7 @@ const About = () => {
 
   //   return () => cleanupFunctions.forEach(x => x())
   // }, [])
-  const { scrollYProgress } = useScroll()
 
-  const movement = useTransform(scrollYProgress, [0.3485, 0.88], [-719, -2020])
-  useMotionValueEvent(scrollYProgress, 'change', (x) => {
-    // setTransformY(movement.get())
-    console.log(scrollYProgress.get());
-    // console.log(-3.2 * movement.get());
-  })
-  // if(scrollYProgress>)
 
 
   const buttonVariants = {
@@ -161,7 +153,7 @@ const About = () => {
 
 
 
-      <p className={`flex justify-center ${MonaMedium.className} mx-auto bg-gradient-to-r from-[#374151] to-[#6161A6] bg-clip-text text-transparent [-webkit-background-clip:text] px-4 mt-20 mb-12  font-medium w-full md:w-[481px] text-[20px] md:text-[28px] text-center  leading-[2] tracking-normal `}>Decode your off-campus placement journey with OffCampusHire</p>
+      <p className={`flex justify-center ${MonaMedium.className} mx-auto bg-gradient-to-r from-[#374151] to-[#6161A6] bg-clip-text text-transparent [-webkit-background-clip:text] px-4 mt-20 mb-12 md:px-0 md:my-20  font-medium w-full md:w-[481px] text-[20px] md:text-[28px] text-center  leading-[2] tracking-normal `}>Decode your off-campus placement journey with OffCampusHire</p>
 
 
       <div className="max-w-[900px] h-[705px] text-[1rem] md:text-[18px] overflow-auto  scrollbar-thin  mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[30px] bg-[#282C34] px-9 py-16">
