@@ -30,7 +30,7 @@ const Underneath = () => {
             </div> */}
 
 
-                <div className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96">
+                <div className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-16 md:mb-96">
                     {/* <motion.div style={{ y: movementbox, transitionTimingFunction: 'linear' }} className="mx-auto duration-0  bg-cover  bg-top  flex flex-col gap-3 items-center justify-start w-full xl:w-[1280px]  md:h-[572px] mt-14 pt-10 px-3 mb-28 md:mb-96"> */}
                     <h2 className={`${GeneralMedium.className} font-medium text-[24px] bmt:min-w-fit md:w-[489px] text-[#020617BF]/[.75] tracking-normal text-start md:text-center leading-[1.8] `}>We're changing the way students explore the realm of offcampus placement opportunities</h2>
 

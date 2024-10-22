@@ -92,3 +92,7 @@ body {
     background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75");
   }
 }
+
+::-webkit-scrollbar {
+  @apply w-0
+}

@@ -199,8 +199,8 @@ const FirstPageLoad = ({ setLoading }) => {
 
 
                         <motion.div exit={{ opacity: 0 }} transition={{ duration: 1 }} className=" flex mt-auto gap-6 md:gap-40 mb-7 justify-between w-full md:px-32  items-center" >
-                            <div className="flex items-baseline text-xl md:text-5xl max-w-fit leading-none"><span>Loading:</span></div>
-                            <div className={`h1 mb-0 leading-negative md:mr-8 font-secondary w-[150px] uppercase text-5xl md:text-8xl font-semibold ${MonaBold.className} `}><span className='w-[100px]' data-progress-value="">{load}</span><span className='text-6xl md:text-9xl'>%</span></div>
+                            <div className="flex items-baseline text-xl lg:text-3xl max-w-fit leading-none"><span>Loading:</span></div>
+                            <div className={`h1 mb-0 leading-negative md:mr-8 font-secondary w-[150px] uppercase text-5xl lg:text-8xl font-semibold ${MonaBold.className} `}><span className='w-[100px]' data-progress-value="">{load}</span><span className='text-7xl lg:text-9xl'>%</span></div>
                         </motion.div>
 
 
