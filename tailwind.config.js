@@ -12,7 +12,7 @@ module.exports = {
         // 'tablet': { 'max': '1024px' },
         'bL4k': { 'min': '1440px' },
         'bm4k': { 'min': '1920px' },
-
+        't12': { 'max': '1200px' },
         'btl': { 'max': '991px' },
         'tablet': { 'max': '767px' },
         'bmMt': { 'max': '670px' },

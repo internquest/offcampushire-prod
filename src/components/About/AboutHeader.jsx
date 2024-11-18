@@ -6,7 +6,7 @@ const AboutHeader = () => {
   return (
     <header className={"pt-16 text-left md:text-center"}>
       <h1
-        className={` ${MonaMedium.className} mx-auto max-w-[900px] px-4 text-[2.25rem] tracking-[-0.015em] sm:text-[3rem] lg:text-[4rem] lg:leading-[5.5rem]`}
+        className={` ${MonaMedium.className} mx-auto mt-[100px] max-w-[720px] px-4 text-[2.25rem] tracking-[0] sm:text-[3rem]  lg:leading-[5.5rem]`}
       >
         Empowering freshers with{" "}
         <span className="bg-text-gradient bg-clip-text text-transparent">

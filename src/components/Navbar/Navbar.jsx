@@ -32,7 +32,7 @@ const Navbar = () => {
                 />
               </Link>
             </div>
-            <div id="nav" className="hidden flex-row items-center gap-4 leading-none xl:flex">
+            <div id="nav" className="t12:hidden flex-row items-center gap-4 leading-none flex">
               <Link href="/about">
                 <div className="group flex items-center gap-1 font-semibold">
                   <div className="text-[rgba(2, 6, 23, 1)] z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[14px] transition-all hover:bg-gray-100 hover:text-gray-900">
@@ -69,7 +69,7 @@ const Navbar = () => {
                 </div>
               </Link>
             </div>
-            <div className="z-30 hidden items-center gap-2 xl:flex">
+            <div className="z-30 t12:hidden items-center gap-2 xl:flex">
               <button className="focus:shadow-purple group pointer-events-auto relative h-fit w-full rounded-lg transition-all">
                 <span className="flex flex-row items-center justify-center gap-2 rounded-lg bg-transparent px-4 py-3 text-[14px] font-bold leading-none text-[#020617] transition-all hover:bg-gray-100 hover:text-gray-700 active:bg-gray-50 active:bg-clip-text active:text-blue-400 active:text-transparent active:shadow-md">
                   Sign in
@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
           </div>
           <button
-            className="absolute right-6 z-30 h-5 w-5 text-gray-700 xl:hidden [&>*]:h-0.5 [&>*]:rounded-full [&>*]:bg-gray-700 [&>*]:transition-all [&>*]:duration-300 [&>*]:ease-in-out"
+            className="absolute right-6 z-30 h-5 w-5 text-gray-700 t12:block hidden [&>*]:h-0.5 [&>*]:rounded-full [&>*]:bg-gray-700 [&>*]:transition-all [&>*]:duration-300 [&>*]:ease-in-out"
             onClick={handleMenuClick}
           >
             <div

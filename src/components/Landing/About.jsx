@@ -153,10 +153,10 @@ const About = () => {
 
 
 
-      <p className={`flex justify-center ${MonaMedium.className} mx-auto bg-gradient-to-r from-[#374151] to-[#6161A6] bg-clip-text text-transparent [-webkit-background-clip:text] px-4 mt-20 mb-12 md:px-0 md:my-20  font-medium w-full md:w-[481px] text-[20px] md:text-[28px] text-center  leading-[2] tracking-normal `}>Decode your off-campus placement journey with OffCampusHire</p>
+      <p className={`flex justify-center ${MonaMedium.className} mx-auto bg-gradient-to-r from-[#374151] to-[#6161A6] bg-clip-text text-transparent [-webkit-background-clip:text] px-4 mt-20 mb-12 md:px-0 md:my-20  font-medium w-full md:w-[481px] text-[20px] md:text-[28px] text-center  leading-[2] tracking-[.2px] `}>Decode your off-campus placement journey with OffCampusHire</p>
 
 
-      <div className="max-w-[900px] h-[705px] text-[1rem] md:text-[18px] overflow-auto  scrollbar-thin  mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[30px] bg-[#282C34] px-9 py-16">
+      <div className="max-w-[900px] h-[705px] text-[1rem] md:text-[18px] overflow-auto    mx-2 flex lg:mx-auto bmt:rounded-3xl rounded-[30px] bg-[#282C34] px-9 py-16">
         <pre>
           <code className="">
             <span className=" inline-block mb-1">
@@ -318,7 +318,7 @@ const About = () => {
       <div className=" flex relative flex-col items-center h-[450px] md:h-[656px] bg-cover bg-center rounded-[40px] overflow-hidden mt-20">
         <Image src='https://ik.imagekit.io/0ytuu3ujr/Rectangle%2040138.png' alt="" fill={true} priority={true} className="absolute top-0 bottom-0 left-0 right-0" />
         <div className={`max-w-[1280px] relative z-[1] flex flex-col items-center gap-16 rounded-[20px] px-4 flex-shrink-5 py-16 md:py-32 mx-auto`}>
-          <p className={`max-w-[646px] ${GeneralMedium.className} font-medium mb-4 text-start md:text-center text-[18px] md:text-[22px] leading-[2] tracking-[-.01em] flex  text-white flex-shrink`}>Our commitment to transforming the off-campus placement ecosystem is
+          <p className={`max-w-[646px] ${GeneralMedium.className} font-medium mb-4 text-start md:text-center text-[18px] md:text-[20px] leading-[2] tracking-[.25px] flex  text-white flex-shrink`}>Our commitment to transforming the off-campus placement ecosystem is
             reflected in our impressive statistics and strong network of collaborations
             and partnerships. Here’s a glimpse of the impact we’ve made so far</p>
 
@@ -332,29 +332,29 @@ const About = () => {
         <div className="flex flex-col flex-shrink-[5] gap-6 bmt:self-stretch">
           <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] h-[192px] rounded-[20px] bg-gradient-to-b from-[#F6F9FE] to-[#CCCCFF]  ">
             <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] text-[#3B424A] tracking-normal  mt-2 `}>150+</h1>
-            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal text-[#3B424A]`}>startup partners</p>
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-[.25px] text-[#3B424A]`}>startup partners</p>
           </div>
           <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] h-[236px] rounded-[20px] text-white bg-gradient-to-b from-[#14253F] to-[#3461A5E5] ">
             <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>30+</h1>
-            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal `}>ongoing university partnership
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-[.25px] `}>ongoing university partnership
               talks</p>
           </div>
         </div>
         <div className="flex flex-col flex-shrink-[5] gap-6 bmt:self-stretch">
           <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] h-[192px] rounded-[20px] text-white bg-gradient-to-b from-[#AE85F7] to-[#2D3195CC] ">
             <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>10+</h1>
-            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal `}>college partners</p>
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-[.25px] `}>college partners</p>
           </div>
           <div className="flex flex-col items-start gap-5  px-3 lg:px-6 py-6  max-w-[350px] h-[236px] rounded-[20px] text-white bg-gradient-to-b from-[#FDA57C] to-[#FB85B8] ">
             <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>50+</h1>
-            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-normal `}>ongoing startup partnership
+            <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] tracking-[.25px] `}>ongoing startup partnership
               talks</p>
           </div>
         </div>
 
         <div className="flex flex-col items-start flex-shrink-[5] gap-5   px-3 lg:px-6 py-6   max-w-[360px] h-[276px] text-white rounded-[20px] bg-gradient-to-b from-[#6E67FD] to-[#3DCAFF] ">
           <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>30</h1>
-          <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] mr-6 tracking-normal `}>upcoming placement drives
+          <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] mr-6 tracking-[.25px] `}>upcoming placement drives
             finalized to be organized in
             2024</p>
         </div>
@@ -363,7 +363,7 @@ const About = () => {
 
 
       <div className={`max-w-[880px] ${GeneralMedium.className} font-medium mx-auto  mt-14  text-[12px] w-full md:max-w-[880px] min-h-[220px] md:min-h-[324px] md:text-[1.3rem] !leading-[2] tracking-wide px-3 md:px-20  flex items-center justify-center  text-white rounded-[250px] bg-[#F4F4FE]  text-start md:text-center  `}>
-        <p className="bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] max-w-[643px]  bg-clip-text text-transparent mx-8 " >Our network continues to grow as we forge new partnerships
+        <p className="bg-gradient-to-r from-[#7F73FF] to-[#42B1FF] max-w-[643px] tracking-[-.05px] bg-clip-text text-transparent mx-8 " >Our network continues to grow as we forge new partnerships
           and expand our reach. By collaborating with more colleges and
           companies, we aim to provide even greater opportunities for
           freshers and enhance their career prospects

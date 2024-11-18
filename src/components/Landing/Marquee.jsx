@@ -7,10 +7,17 @@ const Marquee = ({ marqref }) => {
     const [transfromY, setTransformY] = useState(0)
 
 
-    const { scrollYProgress } = useScroll()
-    const movement = useTransform(scrollYProgress, [0, 0.3], [0, 900])
-    useMotionValueEvent(scrollYProgress, 'change', (x) => {
-        setTransformY(movement.get())
+    const { scrollYProgress } = useScroll(
+        {
+            target: marqref,
+            offset: ['-.5 end', 'end start']
+        }
+    )
+    const movement = useTransform(scrollYProgress, [0, 1], [0, 2000])
+    useMotionValueEvent(movement, 'change', (x) => {
+        console.log(scrollYProgress.get());
+
+        setTransformY(x)
         // console.log(movement.get());
     })
 
@@ -33,7 +40,7 @@ const Marquee = ({ marqref }) => {
                     </div>
 
                 </div >
-                <span className='h-[0.9rem] w-full absolute  left-0 mt-[-1px] top-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-br-full rounded-bl-full '></span>
+                {/* <span className='h-[0.9rem] w-full absolute  left-0 mt-[-1px] top-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-br-full rounded-bl-full '></span> */}
             </motion.section >
 
             <motion.section className={`text-white -mt-20  lg:hidden translate-y-0 pb-6  relative bg-gradient-to-r bm4k:-mt-10 from-[#6161A6] to-[#252540] rounded-[50px] `}>
