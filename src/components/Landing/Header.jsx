@@ -87,7 +87,7 @@ export default function Header({ loading, movement }) {
               </motion.div>
 
               <h1 className={` mx-4 mt-24 md:mx-auto font-medium  text-start   lg:text-center  text-[36px] pr-4 sm:hidden md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight  w-full  md:max-w-[550px]         ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off- campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
-              <h1 className={` mx-auto mt-32 font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight  w-full  md:max-w-[550px]         ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
+              <h1 className={`mx-4 md:mx-auto mt-32 font-medium  text-start lg:text-center hidden sm:block  text-[36px] md:text-[48px]   px-0  bmt:leading-[1.75] leading-[1.6] tracking-tight  w-full  md:max-w-[550px]         ${MonaMedium.className}`}><WordsWoutanim isclip={true}>The future of off-campus</WordsWoutanim><WordsWoutanim isclip={true}>placement drives is here</WordsWoutanim></h1>
 
 
               <div className="w-full flex justify-center   ">
@@ -103,7 +103,7 @@ export default function Header({ loading, movement }) {
 
               <motion.div initial='initial' animate='animate' variants={imagvariants} className="ml-4 md:mx-4" >
                 {
-                  windowWidth < 768 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2063.svg' alt="" width={425} height={798} priority={true} className="mx-auto   mt-16" />
+                  windowWidth < 768 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2063.svg' alt="" width={425} height={798} priority={true} className="ml-auto   mt-16" />
                 }
                 {
                   windowWidth >= 768 && windowWidth < 1280 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2064.svg' alt="" width={1000} priority={true} height={798} className="mx-auto   mt-16" />

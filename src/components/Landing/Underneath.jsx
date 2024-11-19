@@ -23,7 +23,7 @@ const Underneath = () => {
 
     return (
         <>
-            <div data-scroll data-scroll-section className={`bg-white rounded-[50px]    lg:-mt-[600px] relative`}>
+            <div data-scroll data-scroll-section className={`bg-white rounded-[50px]    lg:-mt-[840px] relative`}>
                 {/* <motion.section style={{ y: (scrollYProgress.get().toFixed(2) > 0.31 ? transform : 0) }} className={` z-[-1] relative `}> */}
                 {/* <div className=' '>
                 <Image src={rectangleBox} alt='' className='object-cover mx-auto' />

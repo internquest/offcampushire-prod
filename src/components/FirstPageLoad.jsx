@@ -6,6 +6,7 @@ import { MonaBold, MonaMedium } from '@/utils/fonts'
 import Image from 'next/image'
 import WordsWoutanim from './WordsWoutanim'
 import Link from 'next/link'
+import logo from '@/assets/Group 85.svg'
 
 const FirstPageLoad = ({ setLoading }) => {
     const [load, setLoad] = useState(0)
@@ -134,7 +135,7 @@ const FirstPageLoad = ({ setLoading }) => {
                                             height="60"
                                             className="z-30 h-fit w-full"
                                             style={{ color: "transparent" }}
-                                            src="https://www.datocms-assets.com/105223/1701819587-logo.svg"
+                                            src={logo}
                                         />
                                     </Link>
                                 </div>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import NavbarMenuDropdown from "./NavbarMenuDropdown";
 import Image from "next/image";
 import Link from "next/link";
+import logo from '@/assets/Group 85.svg'
 
 const Navbar = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
                   height="60"
                   className="z-30 h-fit w-full"
                   style={{ color: "transparent" }}
-                  src="https://www.datocms-assets.com/105223/1701819587-logo.svg"
+                  src={logo}
                 />
               </Link>
             </div>

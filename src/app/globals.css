@@ -87,6 +87,34 @@ body {
   background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhome-mobile.webp&w=2048&q=75");
 }
 
+@layer components {
+  .faq-card {
+    @apply text-black/[.87] relative [transition:margin 150ms cubic-bezier(0.4, 0, 0.2, 1)]
+  }
+
+  .MuiAccordion-gutters {
+    @apply before:bg-none
+  }
+
+  .flex-center {
+    @apply flex items-center
+  }
+
+
+}
+
+.MuiAccordionSummary-content.css-7iurs7-MuiAccordionSummary-content.Mui-expanded {
+  margin-top: 12px;
+  mask-border: 12px;
+}
+
+/* .MuiCollapse-root.MuiCollapse-vertical.MuiCollapse-entered {
+  background-color: #0f172a;
+  color: #94a3b8;
+} */
+
+
+
 @media (min-width: 768px) {
   .bg-mobile {
     background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75");

@@ -56,7 +56,7 @@ const MainDesc = ({ marqref, descRef }) => {
 
   return (
     <>
-      <motion.section ref={descRef} style={{ y: marqrefinview && -2.1 * transfromY }} className='relative hidden lg:block w-sc bg-white  rounded-[50px] '>
+      <motion.section ref={descRef} style={{ y: marqrefinview && -2.8 * transfromY }} className='relative hidden lg:block w-sc bg-white  rounded-tl-[50px] rounded-tr-[50px] '>
         {/* // <motion.section data-scroll data-scroll-offset='-100%,100%' data-scroll-section data-scroll-class='isInview' className='relative opacity-0 w-sc bg-white   rounded-[50px]  '> */}
         {/* <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-[50px] rounded-tl-[50px] '></span> */}
         {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
@@ -87,7 +87,7 @@ const MainDesc = ({ marqref, descRef }) => {
 
           </div>
         </div>
-        <div className={`bg-[url('https://ik.imagekit.io/0ytuu3ujr/hassaan-here-VPGjoxRXPY0-unsplash-1428x1428%201.png')] bg-cover bg-center w-full rounded-br-[50px] rounded-bl-[50px] `}>
+        <div className={`bg-[url('https://ik.imagekit.io/0ytuu3ujr/hassaan-here-VPGjoxRXPY0-unsplash-1428x1428%201.png')] bg-cover bg-center w-full  `}>
           <div className={` py-[40px]  w-full    md:py-6 md:px-6   lg:px-3 lg:py-3 md:h-[400px] lg:h-[550px] flex flex-col md:flex-row justify-center md:items-center  gap-5 md:gap-12 lg:gap-12 tracking-tight max-w-[1280px] mx-auto`}>
             <h2 className={` ${MonaMedium.className} text-[30px] md:text-[24px]  max-w-[338px] lg:text-4xl font-semibold md:leading-[1.5] mx-3 btl:min-w-[220px] lg:min-w-[300px] lg:leading-[1.7] text-white tracking-[.01em]  text-start  `}>Reimagining off-campus placement drives ecosystem of India</h2>
             <p className={`${GeneralMedium.className} bmt:min-w-fit  md:max-w-[699px] text-[1.1rem] lg:text-[1.4rem]  leading-[1.85]   md:leading-[1.7] lg:leading-[2] tracking-[.025em] font-medium  text-start mx-3  md:pl-8 text-white`}>Welcome to OffcampusHire, where we are dedicated to
