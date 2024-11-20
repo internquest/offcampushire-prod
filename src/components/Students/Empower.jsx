@@ -14,11 +14,11 @@ const Empower = () => {
             <h2
               className={`text-[32px] leading-tight md:text-[38px] lg:text-[48px] ${MonaBold.className}`}
             >
-              <span className="">The web3 API plus so much more</span>
+              <span className="">Here’s how we empower you</span>
             </h2>
-            <p className="text-[16px] md:text-[18px]">
+            {/* <p className="text-[16px] md:text-[18px]">
               Key features for you to build and scale.
-            </p>
+            </p> */}
           </div>
         </div>
         <ul className="z-20 grid grid-cols-1 gap-4 overflow-y-auto md:grid-cols-2 lg:w-1/2 lg:grid-cols-1">

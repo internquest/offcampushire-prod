@@ -3,7 +3,7 @@ const DoublePara = () => {
   return (
     <div className="flex flex-col items-center justify-center space-y-12 bg-[#f9f9fb] px-4 py-[42px] text-left text-[#020617]/60 lg:py-[105px] lg:text-center">
       <p
-        className={`${GeneralMedium.className} text-md max-w-[720px] text-[1.125rem] font-normal text-start leading-[2.2rem] lg:text-[1.25rem] lg:leading-[2.75rem]`}
+        className={`${GeneralMedium.className} text-md max-w-[720px] text-[1.125rem] font-normal text-start md:text-center leading-[2.2rem] lg:text-[1.25rem] lg:leading-[2.75rem]`}
       >
         Being left out of on-campus placements can deal a blow to a
         fresher&apos;s confidence and self-esteem. The journey of job hunting
@@ -12,7 +12,7 @@ const DoublePara = () => {
         resilience
       </p>
       <p
-        className={`${GeneralMedium.className} text-md max-w-[720px] text-[1.125rem] font-normal text-start leading-[2.2rem] lg:text-[1.25rem] lg:leading-[2.75rem]`}
+        className={`${GeneralMedium.className} text-md max-w-[720px] text-[1.125rem] font-normal text-start md:text-center leading-[2.2rem] lg:text-[1.25rem] lg:leading-[2.75rem]`}
       >
         For many freshers, securing a job post-graduation isn&apos;t just about
         fulfilling career aspirations; it&apos;s also about contributing to

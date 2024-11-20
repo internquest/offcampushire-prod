@@ -16,7 +16,7 @@ const Moreover = () => {
           Moreover
         </span>
         <p
-          className={`mt-6 text-left text-[1.25rem] leading-[2.5rem] md:text-center lg:text-start  lg:text-[1.5rem] lg:leading-[2.9rem] ${GeneralMedium.className} text-black/80`}
+          className={`mt-6 text-left text-[1.25rem] leading-[2.5rem] md:text-center   lg:text-[1.5rem] lg:leading-[2.9rem] ${GeneralMedium.className} text-black/80`}
         >
           Every fresher starts searching for jobs on traditional job hunting
           platforms excitedly, only to find that most opportunities ask for

@@ -14,7 +14,7 @@ const SpecialFeatures = () => {
       }}
     >
       <div className="mx-auto max-w-[1200px] bg-cover bg-center bg-no-repeat px-4 py-12 sm:px-7 md:py-20 lg:px-4 lg:py-28">
-        <div className="mb-12 max-w-[384px] text-start">
+        <div className="mb-12 max-w-[450px] text-start">
           <h5
             className={`${MonaSemibold.className} text-[20px] lg:text-[28px]`}
           >
