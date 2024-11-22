@@ -43,7 +43,7 @@ const Marquee = ({ marqref }) => {
                 {/* <span className='h-[0.9rem] w-full absolute  left-0 mt-[-1px] top-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-br-full rounded-bl-full '></span> */}
             </motion.section >
 
-            <motion.section className={`text-white -mt-20  lg:hidden translate-y-0 pb-6  relative bg-gradient-to-r bm4k:-mt-10 from-[#6161A6] to-[#252540] rounded-[50px] `}>
+            <motion.section className={`text-white -mt-20  lg:hidden translate-y-0 pb-6  relative bg-gradient-to-r bm4k:-mt-10 from-[#6161A6] to-[#252540] rounded-tl-[50px] rounded-tr-[50px] `}>
                 {/* <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-tr-full rounded-tl-full '></span> */}
                 < div className='w-full h-full pt-[3.13rem] lg:pt-[5.31rem] pb-[4.6rem]   lg:pb-[16rem]   ' >
                     <div className='mx-auto   lg:max-w-[90rem] px-[1.3rem]'>
@@ -58,7 +58,7 @@ const Marquee = ({ marqref }) => {
                     </div>
 
                 </div >
-                <span className='h-[0.9rem] w-full absolute  left-0 mt-[-1px] top-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-br-full rounded-bl-full '></span>
+                {/* <span className='h-[0.9rem] w-full absolute  left-0 mt-[-1px] top-full bg-gradient-to-r from-[#6161A6] to-[#252540]  rounded-br-full rounded-bl-full '></span> */}
             </motion.section >
 
         </>

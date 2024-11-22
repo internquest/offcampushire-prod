@@ -1,6 +1,6 @@
 import Contest from '@/components/codecampconfessions/Contest'
 import Detailer from '@/components/codecampconfessions/Detailer'
-import InspirationBoard from '@/components/codecampconfessions/InspirationBoard'
+// import InspirationBoard from '@/components/codecampconfessions/InspirationBoard'
 import Intro from '@/components/codecampconfessions/Intro'
 import Opportunity from '@/components/codecampconfessions/Opportunity'
 import React from 'react'
@@ -14,11 +14,8 @@ const page = () => {
                 <Opportunity />
                 <Contest />
             </div>
-            <div className="min-h-[50vh] w-full"></div>
-            <div className="flex flex-col relative z-[5] bg-white items-center">
+            {/* <div className="min-h-[50vh] w-full"></div> */}
 
-                <InspirationBoard />
-            </div>
         </>
     )
 }

@@ -101,7 +101,7 @@ const MainDesc = ({ marqref, descRef }) => {
 
       </motion.section>
 
-      <motion.section className='relative -mt-20 lg:hidden w-sc bg-white  rounded-[50px] '>
+      <motion.section className='relative -mt-10 lg:hidden w-sc bg-white  rounded-[50px] '>
         {/* // <motion.section data-scroll data-scroll-offset='-100%,100%' data-scroll-section data-scroll-class='isInview' className='relative opacity-0 w-sc bg-white   rounded-[50px]  '> */}
         {/* <span className='h-[0.9rem] w-full absolute left-0 mb-[-1px] bottom-full bg-inherit  rounded-tr-[50px] rounded-tl-[50px] '></span> */}
         {/* <span className='h-[0.9rem] w-full absolute left-0 top-full mt-[1px] bg-inherit  rounded-br-full rounded-bl-full '></span> */}
