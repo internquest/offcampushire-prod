@@ -8,7 +8,7 @@ import React from 'react'
 const page = () => {
     return (
         <>
-            <div className=" flex relative z-[5] bg-white flex-col items-center ">
+            <div className=" flex relative z-[5] bg-white flex-col items-center rounded-bl-[50px] rounded-br-[50px] w-full h-full">
                 <Intro />
                 <Detailer />
                 <Opportunity />
