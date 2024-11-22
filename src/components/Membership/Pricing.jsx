@@ -1,5 +1,6 @@
 import { GeneralMedium } from "@/utils/fonts"
 import EachPricingCard from "./EachPricingCard"
+import Secondcard from "./Secondcard"
 
 const Pricing = () => {
     return (
@@ -10,7 +11,8 @@ const Pricing = () => {
             </h2>
             <div className="flex flex-col gap-y-8 md:gap-y-16 py-8 md:py-16">
                 <EachPricingCard />
-                <EachPricingCard />
+                {/* <EachPricingCard /> */}
+                <Secondcard />
             </div>
 
             <span className={`${GeneralMedium.className} bg-[#0F172A] text-[#92A1B6] px-4 py-6 md:px-6 md:py-8 rounded-[10px] text-[20px] md:text-[24px]`}>Just a heads-up : The pricing mentioned above is for our monthly memberships</span>

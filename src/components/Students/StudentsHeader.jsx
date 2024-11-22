@@ -3,7 +3,7 @@ import { MonaMedium, MonaSemibold } from "@/utils/fonts";
 const StudentsHeader = () => {
   return (
     <header>
-      <div className="student-bg flex flex-col items-center justify-center px-2 text-left md:text-center">
+      <div className=" !h-[500px] md:!h-[700px] student-bg flex flex-col items-center justify-center px-2 text-left md:text-center">
         <h1
           className={`${MonaSemibold.className} hero-heading w-full max-w-[850px] text-[2rem] font-bold tracking-tight lg:text-[2.5rem] lg:leading-[4rem] lg:tracking-normal`}
         >

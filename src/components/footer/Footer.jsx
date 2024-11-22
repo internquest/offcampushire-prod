@@ -82,7 +82,8 @@ const Footer = () => {
                                 <div className='flex flex-col py-[59px] '>
                                     <h3 className='text-white mt-0 mb-[24px] font-medium text-[24px] leading-[30px]'>More</h3>
                                     <div className='flex flex-col gap-[12px] '>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>About us</a>
+                                        <a href="/about" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>About us</a>
+                                        <a href="/faqs" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Faqs</a>
                                         <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Contact us</a>
                                         <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Affiliate program</a>
                                         <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Clutch reviews</a>
@@ -110,7 +111,7 @@ const Footer = () => {
                     {/* <a href="" className='w-full py-[41px] px-[16px] bm4k:flex bm4k:justify-center bm4k:items-center max-w-full inline-block '>
                 <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
             </a> */}
-                    <p className='text-[50px] md:text-[100px] xl:text-[190px] mx-auto my-5 max-h-[257px] tablet:w-[60%]  align-middle max-w-full inline-block border-0 leading-[1] text-white font-bold'>offcampushire</p>
+                    <p className='text-[50px] md:text-[100px] xl:text-[190px] mx-auto my-5 w-full max-h-[257px]   align-middle max-w-full bg-gradient-to-tr to-[#fe681c] from-[#666666] bg-clip-text text-transparent inline-block border-0 leading-[1]  font-bold'>offcampushire</p>
 
                     <div className='w-full bg-[#0f080333] h-[1px]'></div>
 

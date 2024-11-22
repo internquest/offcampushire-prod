@@ -3,7 +3,7 @@ import FirstPageLoad from "@/components/FirstPageLoad";
 import Footer from "@/components/footer/Footer";
 import About from "@/components/Landing/About";
 import DupAbout from "@/components/Landing/DupAbout";
-import Faqs from "@/components/Landing/Faq";
+// import Faqs from "@/components/Landing/Faq";
 import Header from "@/components/Landing/Header";
 import Landfooter from "@/components/Landing/Landfooter";
 import MainDesc from "@/components/Landing/MainDesc";
@@ -99,7 +99,7 @@ const Home = () => {
             <MainDesc marqref={marqref} descRef={descRef} />
             <Underneath descRef={descRef} underref={underref} />
             <About />
-            <Faqs />
+            {/* <Faqs /> */}
           </div>
           {/* <Landfooter /> */}
         </>

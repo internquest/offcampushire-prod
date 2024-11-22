@@ -62,6 +62,10 @@ html.lenis {
   height: 700px;
 }
 
+.amabasherobg {
+  background-image: url("../assets/ambasador/ambasherobg.jpeg");
+}
+
 .clipping {
   clip-path: polygon(0 -10%, 100% -10%, 100% 110%, 0% 110%)
 }
@@ -87,6 +91,14 @@ body {
   background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhome-mobile.webp&w=2048&q=75");
 }
 
+.introbg {
+  background-image: url('../assets/Mask_group.svg');
+}
+
+.opportunitybg {
+  background-image: url('../assets/66758ef3c65da607d77b41123a4c8b2a.jpeg');
+}
+
 @layer components {
   .faq-card {
     @apply text-black/[.87] relative [transition:margin 150ms cubic-bezier(0.4, 0, 0.2, 1)]
@@ -100,6 +112,14 @@ body {
     @apply flex items-center
   }
 
+  /* membersip */
+  .mem1card {
+    background-image: url("../assets/Membership/membership1bg.png");
+  }
+
+  .mem2card {
+    background-image: url("../assets/Membership/membership2bg.png");
+  }
 
 }
 

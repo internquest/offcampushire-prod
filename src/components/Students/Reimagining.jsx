@@ -9,7 +9,7 @@ const Reimagining = () => {
       >
         <div className="relative z-10 mx-auto min-h-[526px] flex flex-col items-center justify-start px-4 py-12 text-white sm:px-7 md:py-20 lg:px-4 lg:py-16">
           <h5
-            className={`text-[2.25rem] ${MonaMedium.className} max-w-[840px] text-left md:text-center`}
+            className={`text-[2.25rem] ${MonaMedium.className} text-pretty lg:text-wrap max-w-[840px] text-left md:text-center`}
           >
             Reimagining your off-campus placement journey
           </h5>
@@ -18,7 +18,7 @@ const Reimagining = () => {
           >
             <div>
 
-              <p>
+              <p className="text-pretty lg:text-wrap">
                 Are you tired of generic, crowded placement drives that offer
                 limited opportunities?</p>
               <p>
@@ -26,7 +26,7 @@ const Reimagining = () => {
                 top company, but feel lost in the sea of applicants?
               </p>
             </div>
-            <p>
+            <p className="text-pretty lg:text-wrap">
               OffCampusHire is the game-changer in India&apos;s off-campus
               recruitment scene.
             </p>

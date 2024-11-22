@@ -25,9 +25,9 @@ const Navbar = () => {
               <Link href="/" className="z-30 w-28">
                 <Image
                   alt="logo"
-                  width="280"
-                  height="60"
-                  className="z-30 h-fit w-full"
+                  width="112"
+                  height="24"
+                  className="z-30 aspect-[14/3] w-full"
                   style={{ color: "transparent" }}
                   src={logo}
                 />

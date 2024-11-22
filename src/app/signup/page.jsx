@@ -40,18 +40,18 @@ const SignupPage = () => {
     }
   };
   return (
-    <div className="relative mx-auto h-full w-full z-[5] bg-white mb-[470px]">
+    <div className="relative mx-auto h-full w-full z-[5] bg-white lg:mb-[470px]">
       <Image
         src={purplearrow}
         alt="photo"
         width={1200}
         height={1000}
-        className="mx-auto h-full w-full object-contain xl:w-[1000px]"
+        className="mx-auto h-full lg:block hidden w-full object-contain xl:w-[1000px]"
       />
-      <div className="absolute inset-0 top-8 mx-auto w-full pb-40 sm:top-24 lg:top-36 bg-white">
+      <div className=" relative lg:absolute inset-0 top-8 mx-auto w-full pb-40 sm:top-24 lg:top-36 bg-white">
         <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-y-12 px-4 bg-white">
           <div className="flex w-full flex-col items-start justify-between gap-6 sm:px-10 lg:flex-row xl:px-20">
-            <div className="flex w-full flex-col items-start justify-center gap-y-7 px-4 pt-14 sm:px-0 lg:w-1/2">
+            <div className="flex w-full flex-col items-start justify-center gap-y-7 px-4 pt-5 lg:pt-14 sm:px-0 lg:w-1/2">
               <h3
                 style={MonaBold.style}
                 className="text-3xl leading-relaxed tracking-[-0.02em] text-[#292A2A]"

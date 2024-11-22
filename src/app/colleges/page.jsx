@@ -5,7 +5,7 @@ import Procedure from "@/components/Colleges/Procedure";
 
 const CollegesPage = () => {
   return (
-    <div className="overflow-hidden relative z-[5] bg-white">
+    <div className="overflow-hidden relative z-[5] bg-white rounded-bl-[50px] rounded-br-[50px]">
       <Header />
       <Collaborations />
       <HowItWorks />

@@ -3,11 +3,8 @@ import { MonaBold, GeneralMedium } from "@/utils/fonts";
 const Header = () => {
   return (
     <div
-      className="h-full w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage:
-          "url('https://s3-alpha-sig.figma.com/img/0f08/acf2/aa06f6c63b265b345f97340857cf76d9?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQ~FG~GRLluZWGVSvqB7qjryacjyGZv8T-tH9kbwih8vzWEzeXJjgxPE7OXrb928g8Wu7KeNxAtSc-wYP7je6MIUIJcZ0499G48Wcl~CfhRrI0ZWoHIRknpy5ES7s-69yBviLKcyibd4R~JHDIEsQsH7lYtPXHQDp7mL7MbtYa2ehuIAbNrJtY7KAhaiHHe2I0Pbjudfdj30j8fw3v8Lqia-634zQnbgEAtsx5lampmMpSnUxXbgh5M2J86n1sBT4qJxaaJio7uo7BnqpM1qBU~E34w3vRQ2SJ7ikkIuM-onpmbc04Rv54jQeoM4qP5QiwJ-rLOUDsWiMvtY43FbPA__')",
-      }}
+      className="h-full w-full bg-cover bg-center amabasherobg bg-no-repeat"
+
     >
       <div className="relative mx-auto flex max-w-[1170px] flex-col items-center justify-between gap-10 px-4 pt-14 md:pt-24 lg:flex-row lg:gap-8">
         <div className="relative flex w-full max-w-[670px] flex-col gap-6 lg:w-1/2">

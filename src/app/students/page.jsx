@@ -7,7 +7,7 @@ import StudentsHeader from "@/components/Students/StudentsHeader";
 
 const StudentsPage = () => {
   return (
-    <div className="relative z-[5] bg-white">
+    <div className="relative z-[5] bg-white rounded-br-[50px] rounded-bl-[50px]">
       <StudentsHeader />
       <Steps />
       <SayGoodbye />

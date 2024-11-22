@@ -1,5 +1,6 @@
 import Featurecards from "@/components/Ambassador/Featurecards";
 import Header from "@/components/Ambassador/Header";
+import Homebg from "@/components/Ambassador/Homebg";
 import Para from "@/components/Ambassador/Para";
 
 const AmbassadorPage = () => {
@@ -9,6 +10,7 @@ const AmbassadorPage = () => {
         <Header />
         <Para />
         <Featurecards />
+        <Homebg />
       </div>
     </>
   );
