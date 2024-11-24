@@ -134,8 +134,8 @@ const MainDesc = ({ marqref, descRef }) => {
         </div>
         <div className={`bg-[url('https://ik.imagekit.io/0ytuu3ujr/hassaan-here-VPGjoxRXPY0-unsplash-1428x1428%201.png')] bg-cover bg-center w-full rounded-br-[50px] rounded-bl-[50px] `}>
           <div className={` py-[40px]  w-full    md:py-6 md:px-6   lg:px-3 lg:py-3 md:h-[400px] lg:h-[550px] flex flex-col md:flex-row justify-center md:items-center  gap-5 md:gap-12 lg:gap-12 tracking-tight max-w-[1280px] mx-auto`}>
-            <h2 className={` ${MonaMedium.className} text-[30px] md:text-[24px]  max-w-[338px] lg:text-4xl font-semibold md:leading-[1.5] mx-3 btl:min-w-[220px] lg:min-w-[300px] lg:leading-[1.7] text-white tracking-normal text-start  `}>Reimagining off-campus placement drives ecosystem of India</h2>
-            <p className={`${GeneralMedium.className} bmt:min-w-fit  md:max-w-[699px] text-[1.1rem] lg:text-[1.4rem]  leading-[1.85]   md:leading-[1.7] lg:leading-[2] tracking-widest font-medium  text-start mx-3  md:pl-8 text-white`}>Welcome to OffcampusHire, where we are dedicated to
+            <h2 className={` ${MonaMedium.className} text-[30px] md:text-[24px]  max-w-[338px] lg:text-4xl font-semibold md:leading-[1.5] mx-3 btl:min-w-[220px] lg:min-w-[300px] lg:leading-[1.7] text-white tracking-[.015em] text-start  `}>Reimagining off-campus placement drives ecosystem of India</h2>
+            <p className={`${GeneralMedium.className} bmt:min-w-fit  md:max-w-[699px] text-[1.1rem] lg:text-[1.4rem]  leading-[1.85]   md:leading-[1.7] lg:leading-[2] tracking-[.02em] font-medium  text-start mx-3  md:pl-8 text-white`}>Welcome to OffcampusHire, where we are dedicated to
               empowering freshers to kickstart their careers through
               exclusive off-campus placement drives. Our platform
               serves as a catalyst for bridging the gap between freshers

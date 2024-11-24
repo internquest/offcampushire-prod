@@ -4,9 +4,8 @@ const Header = () => {
   return (
     <div
       className="h-full w-full bg-cover bg-center amabasherobg bg-no-repeat"
-
     >
-      <div className="relative mx-auto flex max-w-[1170px] flex-col items-center justify-between gap-10 px-4 pt-14 md:pt-24 lg:flex-row lg:gap-8">
+      <div className="relative mx-auto flex max-w-[1170px] flex-col items-center justify-between gap-10 px-4 pt-16 md:pt-24 lg:flex-row lg:gap-8">
         <div className="relative flex w-full max-w-[670px] flex-col gap-6 lg:w-1/2">
           <h1
             className={`${MonaBold.className} text-[36px] md:text-[48px] md:leading-[4rem] lg:text-[55px] lg:leading-[4.5rem]`}

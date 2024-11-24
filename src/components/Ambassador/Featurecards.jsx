@@ -2,7 +2,7 @@ import { MonaSemibold, GeneralMedium } from "@/utils/fonts";
 const Featurecards = () => {
   return (
     <div className="mx-auto max-w-[1280px] flex justify-center pb-4 md:pb-24">
-      <div className=" flex flex-col md:grid  md:grid-cols-2 md:grid-rows-[200px_minmax(450px,auto)_minmax(250px,auto)] w-full mx-auto auto-rows-auto gap-4 md:px-20 md:pl-28    min-h-[800px]   xl:grid-cols-[365px_275px_372px]">
+      <div className=" flex flex-col md:grid  md:grid-cols-2 md:grid-rows-[200px_minmax(250px,auto)_minmax(250px,auto)] w-full mx-auto auto-rows-auto gap-4 md:px-20 md:pl-28    min-h-[800px]   xl:grid-cols-[365px_275px_372px]">
         <div className="flex flex-col max-w-none w-full xl:max-w-[365px] justify-between rounded-lg bg-gradient-to-b from-[#9850F2]/80 to-[#DC23EB]/80 p-4 text-white xl:[grid-area:1/1/2/2]  xl:row-span-2">
           <h1 className={` ${MonaSemibold.className} text-[28px]`}>
             Rewards & Incentives
@@ -20,7 +20,7 @@ const Featurecards = () => {
             Certificate of Excellence / Appreciation
           </h1>
         </div>
-        <div className="xl:[grid-area:1/3/3/4] flex justify-between gap-2 xl:gap-4 flex-col ">
+        <div className="xl:[grid-area:1/3/3/4] flex  gap-4 flex-col ">
           <div className="flex flex-col xl:max-w-[373px] justify-between rounded-lg bg-gradient-to-b from-[#AE85F7] to-[#2D3195]/80 p-4 text-white pb-14 ">
             <h1 className={` ${MonaSemibold.className} text-[28px]`}>
               Placement Assistance Workshop Pass
@@ -51,8 +51,8 @@ const Featurecards = () => {
           </p>
         </div>
         <div className="xl:col-span-3 col-span-2 flex md:flex-row flex-col   gap-4">
-          <div className="flex flex-col gap-4 w-full md:w-1/2 justify-between">
-            <div className="rounded-lg w-full xl:w-[427px] bg-[#EDF1FF] p-4 pb-10 md:col-span-2">
+          <div className="flex flex-col gap-4 w-full md:w-1/2 xl:w-[427px] justify-between">
+            <div className="rounded-lg w-full xl:w-[427px]  bg-[#EDF1FF] p-4 pb-10 md:col-span-2">
               <h1
                 className={` ${MonaSemibold.className} bg-gradient-to-r from-[#9850F2] to-[#DC23EB] bg-clip-text text-[28px] text-transparent`}
               >

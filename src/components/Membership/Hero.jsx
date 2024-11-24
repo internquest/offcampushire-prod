@@ -14,7 +14,14 @@ const Hero = () => {
                 alt="photo"
                 width={1500}
                 height={1500}
-                className=" max-w-[1000px] absolute top-0 right-11 z-[-1]"
+                className=" max-w-[1000px] md:block hidden absolute top-0 right-11 z-[-1]"
+            />
+            <Image
+                src={'https://www.alchemy.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F105223%2F1705704158-orange-arrow-bg.png&w=3840&q=75'}
+                alt="photo"
+                width={800}
+                height={800}
+                className=" max-w-[1000px] md:hidden  absolute top-0 right-11 z-[-1]"
             />
             <div className=" mx-auto w-full pt-8 md:pt-16 lg:pt-24 xl:pt-36">
                 <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-y-12 px-4">

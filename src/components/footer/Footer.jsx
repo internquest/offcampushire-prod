@@ -15,6 +15,7 @@ import vidiosa from '@/assets/footer/665d8f19e5ffc6a7503d910d_Vidiosa_gif.gif'
 import facebook from '@/assets/footer/facebook logo in white colour.svg'
 import Social from './Social'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -68,7 +69,7 @@ const Footer = () => {
                     <div className=''>
                         <div className='w-full mx-auto bmt:px-[10px] tablet:px-[20px] max-w-[1920px] bL4k:px-[66px] bm4k:px-[88px]    px-[46px] '>
                             <div className='grid gap-x-[16px] tablet:grid-cols-[1fr] grid-cols-[1fr_.25fr_1fr_.25fr_1fr] grid-rows-[auto] auto-cols-[1fr]'>
-                                <div className='flex flex-col py-[59px] '>
+                                <div className='flex flex-col  py-8 md:py-[59px] '>
                                     <h3 className='text-white mt-0 mb-[24px] font-medium text-[24px] leading-[30px]'>Service</h3>
                                     <div className='flex flex-col gap-[12px] '>
                                         <a href="" className='text-white hover:text-[#fe681c] transition-all duration-[.4s]'>Animated Explainer Videos</a>
@@ -79,20 +80,22 @@ const Footer = () => {
 
                                 <div className='w-[1px] tablet:h-[1px] tablet:w-full bg-[#0f080333] mr-[48px]'></div>
 
-                                <div className='flex flex-col py-[59px] '>
+                                <div className='flex flex-col py-8 md:py-[59px] '>
                                     <h3 className='text-white mt-0 mb-[24px] font-medium text-[24px] leading-[30px]'>More</h3>
                                     <div className='flex flex-col gap-[12px] '>
-                                        <a href="/about" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>About us</a>
-                                        <a href="/faqs" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Faqs</a>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Contact us</a>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Affiliate program</a>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Clutch reviews</a>
+                                        <Link href="/about" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>About us</Link>
+                                        <Link href="/faqs" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Faqs</Link>
+                                        <Link href="/codecampconfessions" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Codecampconfessions</Link>
+                                        <Link href="/inspirationBoard" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>InspirationBoard</Link>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Contact us</Link>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Affiliate program</Link>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Clutch reviews</Link>
                                     </div>
                                 </div>
 
                                 <div className='w-[1px] tablet:h-[1px] tablet:w-full bg-[#0f080333] mr-[48px]'></div>
 
-                                <div className='flex flex-col py-[59px] '>
+                                <div className='flex flex-col  py-8 md:py-[59px] '>
                                     <h3 className='text-white mt-0 mb-[24px] font-medium text-[24px] leading-[30px]'>Contact us</h3>
                                     <div className='flex flex-col gap-[12px] '>
                                         <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'><span className='text-[#ffbd77]'>Phone:</span> +1307-225-7167</a>
@@ -111,7 +114,7 @@ const Footer = () => {
                     {/* <a href="" className='w-full py-[41px] px-[16px] bm4k:flex bm4k:justify-center bm4k:items-center max-w-full inline-block '>
                 <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
             </a> */}
-                    <p className='text-[50px] md:text-[100px] xl:text-[190px] mx-auto my-5 w-full max-h-[257px]   align-middle max-w-full bg-gradient-to-tr to-[#fe681c] from-[#666666] bg-clip-text text-transparent inline-block border-0 leading-[1]  font-bold'>offcampushire</p>
+                    <p className='text-[50px] md:text-[100px] z-[50] xl:text-[190px] mx-auto my-5 w-full max-h-[257px]   align-middle pointer-events-auto  max-w-full cursor-default hover:bg-gradient-to-br bg-gradient-to-br hover:to-[#8161ca] transition-colors duration-200 hover:from-[#40baf3] to-[#733ff1] from-[#36beff] bg-clip-text text-transparent inline-block border-0 leading-[1]  font-bold'>offcampushire</p>
 
                     <div className='w-full bg-[#0f080333] h-[1px]'></div>
 
@@ -204,10 +207,12 @@ const Footer = () => {
                                 <div className='flex flex-col py-[59px] '>
                                     <h3 className='text-white mt-0 mb-[24px] font-medium text-[24px] leading-[30px]'>More</h3>
                                     <div className='flex flex-col gap-[12px] '>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>About us</a>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Contact us</a>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Affiliate program</a>
-                                        <a href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Clutch reviews</a>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>About us</Link>
+                                        <Link href="/codecampconfessions" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Codecampconfessions</Link>
+                                        <Link href="/inspirationBoard" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>InspirationBoard</Link>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Contact us</Link>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Affiliate program</Link>
+                                        <Link href="" className='text-white  hover:text-[#fe681c] transition-all duration-[.4s]'>Clutch reviews</Link>
                                     </div>
                                 </div>
 

@@ -352,7 +352,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-start flex-shrink-[5] gap-5   px-3 lg:px-6 py-6   max-w-[360px] h-[276px] text-white rounded-[20px] bg-gradient-to-b from-[#6E67FD] to-[#3DCAFF] ">
+        <div className="flex flex-col items-start flex-shrink-[5] gap-5   px-3 lg:px-6 py-6   max-w-[350px] h-[276px] text-white rounded-[20px] bg-gradient-to-b from-[#6E67FD] to-[#3DCAFF] ">
           <h1 className={`${MonaBold.className} font-black text-[28px] md:text-[32px] lg:text-[48px] leading-[1.4] tracking-normal  mt-2 `}>30</h1>
           <p className={`${GeneralMedium.className} font-medium  text-[18px] lg:text-xl leading-[1.5] mr-6 tracking-[.25px] `}>upcoming placement drives
             finalized to be organized in

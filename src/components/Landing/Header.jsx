@@ -101,15 +101,14 @@ export default function Header({ loading, movement }) {
                 </div>
               </div>
 
-              <motion.div initial='initial' animate='animate' variants={imagvariants} className="ml-4 md:mx-4" >
+              <motion.div initial='initial' animate='animate' variants={imagvariants} className="ml-4 md:ml-4" >
                 {
                   windowWidth < 768 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2063.svg' alt="" width={425} height={798} priority={true} className="ml-auto   mt-16" />
                 }
                 {
-                  windowWidth >= 768 && windowWidth < 1280 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2064.svg' alt="" width={1000} priority={true} height={798} className="mx-auto   mt-16" />
+                  windowWidth >= 768 && windowWidth < 1280 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2064.svg' alt="" width={1000} priority={true} height={798} className="ml-auto   mt-16" />
                 }
                 {
-
                   windowWidth >= 1280 && <Image src='https://ik.imagekit.io/0ytuu3ujr/Group%2062.svg' alt="" width={1000} height={798} priority={true} className="mx-auto   mt-16" />
                 }
 

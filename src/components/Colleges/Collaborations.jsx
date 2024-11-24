@@ -3,11 +3,11 @@ import { GeneralMedium } from "@/utils/fonts";
 export default function Collaborations() {
   return (
     <div className="purple-bg">
-      <div className="flex w-full flex-col items-center space-y-16 pt-16 lg:px-20 lg:pt-24">
+      <div className="flex w-full flex-col items-center space-y-16 pt-8 md:pt-16 lg:px-20 lg:pt-24">
         <div className="z-10 mx-4 max-w-[575px] lg:mx-0">
           <div className="flex items-center justify-center rounded-2xl border-2 bg-white px-8 py-4 lg:py-16 lg:px-10">
             <p
-              className={`${GeneralMedium.className} max-w-[446px] px-4 text-start text-[21px]  lg:text-3xl lg:leading-[3.65rem]`}
+              className={`${GeneralMedium.className} max-w-[446px] px-4 text-start text-[20px]  lg:text-3xl lg:leading-[3.65rem]`}
             >
               Facilitating collaborations <br />
               between universities and <br />
@@ -15,7 +15,7 @@ export default function Collaborations() {
                 exclusive
               </span>{" "}
               <br />
-              off-campus placement <br />
+              off-campus placement
               drives
             </p>
           </div>
