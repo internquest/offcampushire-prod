@@ -126,7 +126,7 @@ const FirstPageLoad = ({ setLoading }) => {
                     <span className="bg-[hsla(0,0%,100%)]  rounded-[25px] lg:rounded-[25px] -right-5 -left-5 -top-5 -bottom-5 absolute -z-1"></span>
                     <nav className="fixed top-0  z-[999] rounded-tr-[25px] rounded-tl-[25px] w-full   ">
                         <div className="relative flex flex-row  rounded-tr-[25px] rounded-tl-[25px] items-center pt-[1px]   backdrop-blur-[12px]">
-                            <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
+                            <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between pl-1 px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
                                 <div className="flex w-[162px] justify-start ">
                                     <Link href="/" className="z-30 w-28">
                                         <Image
