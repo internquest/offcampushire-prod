@@ -16,6 +16,7 @@ import facebook from '@/assets/footer/facebook logo in white colour.svg'
 import Social from './Social'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footeranim from './Footeranim'
 
 const Footer = () => {
     return (
@@ -114,7 +115,9 @@ const Footer = () => {
                     {/* <a href="" className='w-full py-[41px] px-[16px] bm4k:flex bm4k:justify-center bm4k:items-center max-w-full inline-block '>
                 <Image src={vidiosa} alt="" className='tablet:w-[60%]  align-middle max-w-full inline-block border-0 ' />
             </a> */}
-                    <p className='text-[50px] md:text-[100px] z-[50] xl:text-[190px] mx-auto my-5 w-full max-h-[257px]   align-middle pointer-events-auto  max-w-full cursor-default hover:bg-gradient-to-br bg-gradient-to-br hover:to-[#8161ca] transition-colors duration-200 hover:from-[#40baf3] to-[#733ff1] from-[#36beff] bg-clip-text text-transparent inline-block border-0 leading-[1]  font-bold'>offcampushire</p>
+                    <p className='text-[50px] md:text-[100px]  z-[50] xl:text-[190px] mx-auto my-5 w-full max-h-[257px]   align-middle pointer-events-auto  max-w-full cursor-default  inline-block border-0 leading-[1]  font-bold'>
+                        <Footeranim />
+                    </p>
 
                     <div className='w-full bg-[#0f080333] h-[1px]'></div>
 
